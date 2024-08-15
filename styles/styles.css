@@ -1,0 +1,79 @@
+.productbox{
+    background-color: #f9f9f9;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #e0e0e0;
+    text-align: center;
+    width: 350px;
+    display: inline-block;
+    img{
+        width: 300px;
+        height:200px;
+    }
+}
+
+.filterButton{
+    background-color: #f9f9f9;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #e0e0e0;
+    text-align: center;
+    width: 200px;
+    display: inline-block;
+}
+
+#search{
+    width: 300px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid #e0e0e0;
+    padding: 5px;
+    grid-column: 1;
+}
+
+.star{
+    font-size: 50px;
+    color: #100f0f;
+    margin:0.5px;
+}
+
+.star_unfilled{
+    color: #e0e0e0;
+    font-size:50px;
+    margin: 0.5px;
+}
+
+.container{
+    grid-template-columns: 400px 400px 400px;
+    /* grid-template-rows: 10% 30% 30% 30%; */
+    display: grid;
+}
+
+#Cove{
+    grid-column: 1;
+}
+
+#Nauvoo{
+    grid-column: 2;
+}
+
+#Lodge{
+    grid-column: 3;
+}
+
+#NorthPoint{
+    grid-column: 1;
+}
+
+#Ridge{
+    grid-column: 2;
+}
+
+#Landing{
+    grid-column: 3;
+}
+
