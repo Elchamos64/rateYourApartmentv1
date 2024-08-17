@@ -1,3 +1,53 @@
+:root{
+    --nav-link-color: #000000;
+    --nav-background-color: #ffffff;
+    --nav-hover-link-color: #000000;
+    --nav-hover-background-color: #ffffff;
+}
+
+nav {
+    background-color: var(--nav-background-color);
+    line-height: 3em;
+    text-align: center;
+    font-size: 1.2em;
+    list-style-type: none;
+    display: flex;
+  }
+  nav a {
+    padding:1em;
+    min-width: 120px;
+    text-decoration: none;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom:10px;
+  
+  }
+  nav a:link, nav a:visited {
+    color: var(--nav-link-color);
+  }
+  nav a:hover {
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
+  }
+
+  .loginButton{
+    background-color: #f9f9f9;
+    margin: 10px;
+    margin-top:20px;
+    padding: 10px;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #e0e0e0;
+    text-align: center;
+    width: 150px;
+    height: 50px;
+    display: inline-block;
+  }
+
+  #signIn{
+    margin-left: 50px;
+  }
+
 .productbox{
     background-color: #f9f9f9;
     margin: 10px;
