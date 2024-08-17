@@ -6,19 +6,46 @@
     <title>Student Approved Housing</title>
     <link rel="stylesheet" href="styles/styles.css">
 </head>
+<nav>
+    <a href="index.html"><img src="images/Rate Your Apartment Rexburg,ID.png" alt="logo"style="width:244px;height:108px;"></a>
+    <a href="index.html">Home Page</a>
+    <a href="studentApproved.html">Student Approved Housing</a>
+    <a href="community.html">Community Housing</a>
+</nav>
 <body>
-    <nav>
-        <a href="index.html"><img src="images/Rate Your Apartment Rexburg,ID.png" alt="logo"style="width:244px;height:108px;"></a>
-        <a href="index.html">Home Page</a>
-        <a href="studentApproved.html">Student Approved Housing</a>
-        <a href="community.html">Community Housing</a>
-    </nav>
-        <h1>Student Approved Housing</h1>
-        <div class="container">
-        <input type="text" id="search" name="search" placeholder="Search..">
-        <button type="submit" class="filterButton">Price Ascending</button>
-        <button type="submit" class="filterButton">Price Descending</button>
-        <div class="container">
+    <div class="container">
+        <div class="student_approved_header">
+            <h1>Student Approved Housing</h1>
+        </div>
+        <div class="first_row">
+            <input type="text" id="search" name="search" placeholder="Search..">
+            <button type="submit" class="filterButton" id="ascending">Price Ascending</button>
+            <button type="submit" class="filterButton" id ="descending">Price Descending</button>
+        </div>
+        <div class="filter">
+            <h3>Filters</h3>
+            <div>
+                <input type="checkbox" id="privateRoom">
+                <label for="privateRoom">Private Room</label>
+            </div>
+            <div>
+                <input type="checkbox" id="house">
+                <label for="house">House</label>
+            </div>
+            <h3>Ammenties</h3>
+            <div>
+                <input type="checkbox" id="washerDryer">
+                <label for="washerDryer">Washer/Dryer in Appt.</label>
+            </div>
+            <div>
+                <input type="checkbox" id="exerciseRoom">
+                <label for="exerciseRoom">Exercise Room</label>
+            </div>
+            <div>
+                <input type="checkbox" id="musicRoom">
+                <label for="musicRoom">Music Room</label>
+            </div>
+        </div>
         <a href="#"><div class="productbox" id ="Cove">
             <img src="images/the_cove.jpg" alt="image1">
             <h2>The Cove</h2>

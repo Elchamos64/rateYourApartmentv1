@@ -6,6 +6,7 @@
     border-radius: 5px;
     box-shadow: 0 0 5px #e0e0e0;
     text-align: center;
+    color:black;
     width: 350px;
     display: inline-block;
     img{
@@ -22,17 +23,8 @@
     border-radius: 5px;
     box-shadow: 0 0 5px #e0e0e0;
     text-align: center;
-    width: 200px;
+    width: 150px;
     display: inline-block;
-}
-
-#search{
-    width: 300px;
-    height: 30px;
-    border-radius: 5px;
-    border: 1px solid #e0e0e0;
-    padding: 5px;
-    grid-column: 1;
 }
 
 .star{
@@ -48,32 +40,90 @@
 }
 
 .container{
-    grid-template-columns: 400px 400px 400px;
-    /* grid-template-rows: 10% 30% 30% 30%; */
     display: grid;
+    grid-template-columns: 19% 27% 27% 27%;
+    grid-template-rows: auto;
+}
+
+.student_approved_header{
+    grid-column: 1/5;
+    grid-row: 1;
+    width: 1000px;
+    height: 100;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+#search{
+    width: 638px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid #e0e0e0;
+    padding: 5px;
+    grid-column: 2;
+    margin-left: 10px;
+    margin-right: 400px;
+}
+
+#ascending{
+    grid-column:3;
+}
+
+#descending{
+    grid-column:4;
+} 
+
+.first_row{
+    grid-column: 1/5;
+    grid-row: 2;
+    display: inline-block;
+}
+
+
+.filter{
+    background-color: #f9f9f9;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #e0e0e0;
+    width: 200px;
+    height:300px;
+    display: inline-block;
+    grid-column: 1;
+    grid-row: 3/span 2;
+    input{
+        margin: 10px;
+    }
 }
 
 #Cove{
-    grid-column: 1;
+    grid-column: 2;
+    grid-row:3;
 }
 
 #Nauvoo{
-    grid-column: 2;
+    grid-column: 3;
+    grid-row:3;
 }
 
 #Lodge{
-    grid-column: 3;
+    grid-column: 4;
+    grid-row:3;
 }
 
 #NorthPoint{
-    grid-column: 1;
+    grid-column: 2;
+    grid-row:4;
 }
 
 #Ridge{
-    grid-column: 2;
+    grid-column: 3;
+    grid-row:4;
 }
 
 #Landing{
-    grid-column: 3;
+    grid-column: 4;
+    grid-row:4;
 }
 
