@@ -12,8 +12,8 @@ nav {
     font-size: 1.2em;
     list-style-type: none;
     display: flex;
-  }
-  nav a {
+}
+nav a {
     padding:1em;
     min-width: 120px;
     text-decoration: none;
@@ -21,14 +21,18 @@ nav {
     padding-right: 30px;
     padding-bottom:10px;
   
-  }
-  nav a:link, nav a:visited {
+}
+nav a:link, nav a:visited {
     color: var(--nav-link-color);
-  }
-  nav a:hover {
+}
+/* nav a:hover {
     color: var(--nav-hover-link-color);
     background-color: var(--nav-hover-background-color);
-  }
+} */
+
+.nav-link-active{
+    background-color: #bcbcbc;
+}
 
   .loginButton{
     background-color: #f9f9f9;
