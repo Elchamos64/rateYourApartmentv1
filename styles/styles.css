@@ -5,7 +5,7 @@
     --nav-hover-background-color: #ffffff;
 }
 
-nav {
+nav,footer {
     background-color: var(--nav-background-color);
     line-height: 3em;
     text-align: center;
@@ -13,16 +13,23 @@ nav {
     list-style-type: none;
     display: flex;
 }
-nav a {
+nav a{
     padding:1em;
     min-width: 120px;
     text-decoration: none;
     padding-left: 30px;
     padding-right: 30px;
     padding-bottom:10px;
-  
 }
-nav a:link, nav a:visited {
+
+footer a{
+    padding:1em;
+    min-width: 120px;
+    text-decoration: none;
+    padding-bottom:10px;
+}
+
+nav a:link, nav a:visited, footer a:link, footer a:visited {
     color: var(--nav-link-color);
 }
 /* nav a:hover {
@@ -30,11 +37,11 @@ nav a:link, nav a:visited {
     background-color: var(--nav-hover-background-color);
 } */
 
-.nav-link-active{
+.active{
     background-color: #bcbcbc;
 }
 
-  .loginButton{
+.loginButton{
     background-color: #f9f9f9;
     margin: 10px;
     margin-top:20px;
@@ -48,9 +55,7 @@ nav a:link, nav a:visited {
     display: inline-block;
   }
 
-  #signIn{
-    margin-left: 50px;
-  }
+
 
 .productbox{
     background-color: #f9f9f9;
@@ -61,10 +66,10 @@ nav a:link, nav a:visited {
     box-shadow: 0 0 5px #e0e0e0;
     text-align: center;
     color:black;
-    width: 350px;
+    width: 90%;
     display: inline-block;
     img{
-        width: 300px;
+        width: 95%;
         height:200px;
     }
 }
@@ -102,7 +107,7 @@ nav a:link, nav a:visited {
 .student_approved_header{
     grid-column: 1/5;
     grid-row: 1;
-    width: 1000px;
+    width: 100%;
     height: 100;
     display: inline-block;
     margin-left: 10px;
@@ -141,8 +146,8 @@ nav a:link, nav a:visited {
     border: 1px solid #e0e0e0;
     border-radius: 5px;
     box-shadow: 0 0 5px #e0e0e0;
-    width: 200px;
-    height:300px;
+    width: 80%;
+    height:45%;
     display: inline-block;
     grid-column: 1;
     grid-row: 3/span 2;
