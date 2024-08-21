@@ -5,6 +5,27 @@
     --nav-hover-background-color: #ffffff;
 }
 
+p{
+    font-family: 'Roboto', sans-serif;
+}
+
+label{
+    font-family: 'Roboto', sans-serif;
+}
+
+h1{
+    font-family: 'Roboto', sans-serif;
+}
+
+h2{
+    font-family: 'Roboto', sans-serif;
+}
+
+h3{
+    font-family: 'Roboto', sans-serif;
+}
+
+
 nav,footer {
     background-color: var(--nav-background-color);
     line-height: 3em;
@@ -20,6 +41,7 @@ nav a{
     padding-left: 30px;
     padding-right: 30px;
     padding-bottom:10px;
+    font-family: 'Roboto', sans-serif;
 }
 
 footer a{
@@ -27,6 +49,8 @@ footer a{
     min-width: 120px;
     text-decoration: none;
     padding-bottom:10px;
+    padding-right: 250px;
+    font-family: 'Roboto', sans-serif;
 }
 
 nav a:link, nav a:visited, footer a:link, footer a:visited {
@@ -70,7 +94,7 @@ nav a:link, nav a:visited, footer a:link, footer a:visited {
     display: inline-block;
     img{
         width: 95%;
-        height:200px;
+        height:250px;
     }
 }
 
@@ -186,3 +210,35 @@ nav a:link, nav a:visited, footer a:link, footer a:visited {
     grid-row:4;
 }
 
+
+@media screen and (max-width: 1200px) {
+    nav {
+       font-size:0.75em;
+    }
+    nav a{
+        padding:1em;
+        min-width: 120px;
+        text-decoration: none;
+        padding-left: 25px;
+        padding-right: 25px;
+        padding-bottom:10px;
+    }
+    footer a{
+        padding:1em;
+        min-width: 120px;
+        text-decoration: none;
+        padding-bottom:175px;
+        padding-right: 175px;
+    }
+    .loginButton{
+        width: 100px;
+        height: 30px;
+    }
+    .productbox{
+        width: 90%;
+        img{
+            width: 95%;
+            height:175px;
+        }
+    }
+}
