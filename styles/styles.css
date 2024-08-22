@@ -188,35 +188,6 @@ nav a:link, nav a:visited, footer a:link, footer a:visited {
     grid-template-rows: auto;
 }
 
-/* #Cove{
-    grid-column: 2;
-    grid-row:3;
-}
-
-#Nauvoo{
-    grid-column: 3;
-    grid-row:3;
-}
-
-#Lodge{
-    grid-column: 4;
-    grid-row:3;
-}
-
-#NorthPoint{
-    grid-column: 2;
-    grid-row:4;
-}
-
-#Ridge{
-    grid-column: 3;
-    grid-row:4;
-}
-
-#Landing{
-    grid-column: 4;
-    grid-row:4;
-} */
 
 
 @media screen and (max-width: 1200px) {
