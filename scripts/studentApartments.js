@@ -86,12 +86,8 @@ function output(data){
         <img src="${item.imageUrl}" alt=${item.name}>
         <h3>${item.name}</h3>
         <p>$${item.price}/Semester<p>
-        <h4>${item.rating}</h4>
-        <span class="star">&#8902;</span>
-        <span class="star">&#8902;</span>
-        <span class="star">&#8902;</span>
-        <span class="star">&#8902;</span>
-        <span class="star">&#8902;</span></div></a>`;       
+        <h4>${item.rating} / 5</h4>
+        </div></a>`;       
     });
 }
 function Reset(){
