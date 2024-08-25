@@ -1,3 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300&family=Roboto&family=Rubik:wght@300&display=swap");
+
+*{
+    font-family:"Roboto", Rubik;
+    margin: 0;
+}
+
 :root{
     --nav-link-color: #000000;
     --nav-background-color: #ffffff;
@@ -5,43 +12,35 @@
     --nav-hover-background-color: #ffffff;
 }
 
-p{
-    font-family: 'Roboto', sans-serif;
+.hero {
+    text-align: center;
 }
 
-label{
-    font-family: 'Roboto', sans-serif;
+.hero-image {
+    width: 100%;
 }
-
-h1{
-    font-family: 'Roboto', sans-serif;
-}
-
-h2{
-    font-family: 'Roboto', sans-serif;
-}
-
-h3{
-    font-family: 'Roboto', sans-serif;
-}
-
-
 nav,footer {
-    background-color: var(--nav-background-color);
+    /* background-color: var(--nav-background-color); */
     line-height: 3em;
     text-align: center;
     font-size: 1.2em;
     list-style-type: none;
     display: flex;
+    justify-content: space-between;
 }
 nav a{
     padding:1em;
-    min-width: 120px;
     text-decoration: none;
     padding-left: 30px;
     padding-right: 30px;
+    color: #000000;
     padding-bottom:10px;
     font-family: 'Roboto', sans-serif;
+    transition: 1s;
+}
+
+nav a:hover {
+    background-color: #bcbcbc;
 }
 
 footer a{
@@ -50,20 +49,56 @@ footer a{
     text-decoration: none;
     padding-bottom:10px;
     padding-right: 250px;
-    font-family: 'Roboto', sans-serif;
+    color: #000000;
 }
 
-nav a:link, nav a:visited, footer a:link, footer a:visited {
-    color: var(--nav-link-color);
+.search-container{
+    margin: 100px;
+    z-index: 1000;
+    color: #ffffff;
+    font-size: xx-large;
+    position: absolute;
+    left: 30%;
+    transform: translateX(-50%);
+    top: 30%;
+    transform: translateY(-50%);
 }
+
+#title{
+    background-color: #F4F1DE;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 10px;
+    font-size: 16px;
+    color: #fff;
+    outline: none;
+    width: 80%;
+}
+
+.transparent-button{
+    background-color: #F4F1DE;
+    color: #475B5C;
+    border: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 7.2px;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+/* nav a:link, nav a:visited, footer a:link, footer a:visited {
+    color: var(--nav-link-color);
+} */
 /* nav a:hover {
     color: var(--nav-hover-link-color);
     background-color: var(--nav-hover-background-color);
 } */
 
-.active{
+/* .active{
     background-color: #bcbcbc;
-}
+} */
 
 .loginButton{
     background-color: #f9f9f9;
@@ -79,7 +114,15 @@ nav a:link, nav a:visited, footer a:link, footer a:visited {
     display: inline-block;
   }
 
+.approved-student{
+    padding: 40px;
+    height: 400px;
+}
 
+.categories{
+    padding: 40px;
+    height: 400px;
+}
 
 .productbox{
     background-color: #f9f9f9;
@@ -194,7 +237,7 @@ nav a:link, nav a:visited, footer a:link, footer a:visited {
 }
 
 
-@media screen and (max-width: 1200px) {
+/* @media screen and (max-width: 1200px) {
     nav {
        font-size:0.75em;
     }
@@ -224,4 +267,4 @@ nav a:link, nav a:visited, footer a:link, footer a:visited {
             height:175px;
         }
     }
-}
+} */
