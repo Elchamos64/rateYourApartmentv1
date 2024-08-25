@@ -10,9 +10,7 @@ let apartments= [
         "zip": "83440",
         "price": 1750,
         "rating": 4.5,
-        "amenities": ["Washer/Dryer in Appt.", "Exercise Room", "Music Room"],
-        "private_room": false,
-        "house":false
+        "attributes": ["laundry", "gym", "music"]
     },
     {
         "id": 2,
@@ -24,9 +22,7 @@ let apartments= [
         "zip": "83440",
         "price": 1610,
         "rating": 3.8,
-        "amenities": ["gym", "laundry", "music"],
-        "private_room": false,
-        "house":false
+        "attributes": ["gym", "laundry", "music"],
     },
     {
         "id": 3,
@@ -38,9 +34,7 @@ let apartments= [
         "zip": "13579",
         "price":1500,
         "rating": 4.2,
-        "amenities": ["gym", "laundry"],
-        "private_room": false,
-        "house":false
+        "attributes": ["gym", "laundry"]
     },
     {
         "id": 4,
@@ -52,9 +46,7 @@ let apartments= [
         "zip": "24680",
         "price": 1675,
         "rating": 4.0,
-        "amenities": ["pool", "Exercise Room", "parking"],
-        "private_room": false,
-        "house":false
+        "attributes": ["pool", "gym", "parking"]
     },
     {
         "id": 5,
@@ -66,9 +58,7 @@ let apartments= [
         "zip": "35791",
         "price": 1799,
         "rating": 4.7,
-        "amenities": ["pool", "Exercise Room", "parking"],
-        "private_room": true,
-        "house":false
+        "attributes": ["pool", "gym","private room"]
     },
     {
         "id": 6,
@@ -80,9 +70,7 @@ let apartments= [
         "zip": "46802",
         "price": 1670,
         "rating": 3.5,
-        "amenities": ["pool", "gym", "parking"],
-        "private_room": false,
-        "house":false
+        "attributes": ["gym","laundry"]
     }
 ];
 function output(data){
@@ -129,35 +117,35 @@ function sortPriceDsc(){
 }
 output(apartments);
 
-function filterByGym(){
-    Reset();
-    const filteredApartments = apartments.filter(apartment => apartment.amenities.includes("gym"));
-    output(filteredApartments);
-}
+// function filterByGym(){
+//     Reset();
+//     const filteredApartments = apartments.filter(apartment => apartment.amenities.includes("gym"));
+//     output(filteredApartments);
+// }
 
-function filterByWasherDryer(){
-    Reset();
-    const filteredApartments = apartments.filter(apartment => apartment.amenities.includes("Washer/Dryer"));
-    output(filteredApartments);
-}
+// function filterByWasherDryer(){
+//     Reset();
+//     const filteredApartments = apartments.filter(apartment => apartment.amenities.includes("Washer/Dryer"));
+//     output(filteredApartments);
+// }
 
-function filterByPrivateRoom() {
-    Reset();
-    const filteredApartments = apartments.filter(apartment => apartment.private_room === true);
-    output(filteredApartments);
-}
+// function filterByPrivateRoom() {
+//     Reset();
+//     const filteredApartments = apartments.filter(apartment => apartment.private_room === true);
+//     output(filteredApartments);
+// }
 
-function filterByHouse() {
-    Reset();
-    const filteredApartments = apartments.filter(apartment => apartment.house === true);
-    output(filteredApartments);
-}
+// function filterByHouse() {
+//     Reset();
+//     const filteredApartments = apartments.filter(apartment => apartment.house === true);
+//     output(filteredApartments);
+// }
 
-function filterByMusicRoom() {
-    Reset();
-    const filteredApartments = apartments.filter(apartment => apartment.amenities.includes("music room"));
-    output(filteredApartments);
-}
+// function filterByMusicRoom() {
+//     Reset();
+//     const filteredApartments = apartments.filter(apartment => apartment.amenities.includes("music room"));
+//     output(filteredApartments);
+// }
 
 // function filters(){
 //     var privateRoom = document.querySelector("#privateRoom");
@@ -192,9 +180,9 @@ function filters(){
     // Reset the state (clear previous filters)
     Reset();
     
-    // Filter the apartments based on selected amenities
+    // Filter the apartments based on selected attributes
     const filteredApartments = apartments.filter(apartment => 
-        checkedValues.every(amenity => apartment.amenities.includes(amenity))
+        checkedValues.every(attribute => apartment.attributes.includes(attribute))
     );
     
     // Output the filtered apartments
