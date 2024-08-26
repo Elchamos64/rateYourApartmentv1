@@ -796,10 +796,21 @@ function filters(){
     const filteredApartments = apartments.filter(apartment => 
         checkedValues.every(attribute => apartment.attributes.includes(attribute))
     );
+
+    document.querySelector("#ascending").addEventListener("click", () => {
+        Reset();
+        filteredApartments.sort(obj_sort_asc);
+        output(filteredApartments);
+    });
+
+    document.querySelector("#descending").addEventListener("click", () => {
+        Reset();
+        filteredApartments.sort(obj_sort_dsc);
+        output(filteredApartments);
+    });
     
     // Output the filtered apartments
     output(filteredApartments);   
-    console.log(checkedValues); 
     if (checkedValues.length === 0) {
         Reset();
         output(apartments);
