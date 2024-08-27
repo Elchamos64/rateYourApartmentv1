@@ -22,20 +22,27 @@
         </div>
         <div class="first_row">
             <input type="text" id="search" name="search" placeholder="Search..">
+            <button type="submit" class="filterButton" id="searchButton">Search</button>
+            <button type="submit" class="filterButton" id="clear">Clear</button>
             <button type="submit" class="filterButton" id="ascending">Price Ascending</button>
             <button type="submit" class="filterButton" id ="descending">Price Descending</button>
         </div>
         <div class="filter">
-            <h3>Filters</h3>
-            <div>
-                <input type="checkbox" id="privateRoom" value="private room">
-                <label for="privateRoom">Private Room</label>
-            </div>
-            <div>
-                <input type="checkbox" id="house" value ="house">
-                <label for="house">House</label>
-            </div>
-            <div id="Ammenties"><h3>Ammenties</h3>
+            <h2>Filters</h2>
+            <h3>Gender: </h3>
+            <select id="gender">
+                <option value="1">Male</option>
+                <option value="2">Female</option>
+            </select>
+            <div id="Ammenties"><h3>Options: </h3>
+                <div>
+                    <input type="checkbox" id="privateRoom" value="private room">
+                    <label for="privateRoom">Private Room</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="house" value ="house">
+                    <label for="house">House</label>
+                </div>
                 <div>
                     <input type="checkbox" value="laundry" id="washerDryer">
                     <label for="washerDryer">Washer/Dryer in Appt.</label>
@@ -50,7 +57,8 @@
                 </div>
             </div>
             <div>
-                <button type="submit" class="filterButton" id="filter">Apply Changes</button>
+                <button type="submit" class="filterButton" id="filter">Search</button>
+                <button type="submit" class="filterButton" id="clearFilter">Clear</button>
             </div>
         </div>
         <div id="productbox_container">

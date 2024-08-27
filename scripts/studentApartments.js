@@ -1,5 +1,5 @@
 
-let apartments= [
+let maleApartments= [
     {
         "id": 1,
         "imageUrl": "images/the_cove.jpg",
@@ -685,6 +685,8 @@ let apartments= [
         "attributes": ["private room","laundry"]
     }
 ];
+
+let femaleApartments = [];
 function output(data){
     const outputListElement = document.querySelector("#productbox_container");
     data.forEach(item => {
@@ -719,15 +721,14 @@ function obj_sort_dsc(a,b){
 }
 function sortPriceAsc(){
     Reset();
-    apartments.sort(obj_sort_asc);
-    output(apartments);
+    maleApartments.sort(obj_sort_asc);
+    output(maleApartments);
 }
 function sortPriceDsc(){
     Reset();
-    apartments.sort(obj_sort_dsc);
-    output(apartments);
+    maleApartments.sort(obj_sort_dsc);
+    output(maleApartments);
 }
-output(apartments);
 
 // function filterByGym(){
 //     Reset();
@@ -782,9 +783,25 @@ output(apartments);
 //     }
 // }
 
+function search(){
+    Reset();
+    var searchInput = document.querySelector("#search").value;
+    var searchResults = maleApartments.filter(apartment => apartment.name.toLowerCase().includes(searchInput.toLowerCase()));
+    output(searchResults);
+}
+
+function clearSearch(){
+    document.querySelector("#search").value = "";
+    Reset();
+    output(maleApartments);
+}
+
+
 function filters(){
     // Select all checked checkboxes
     var checkboxes = document.querySelectorAll('input[type=checkbox]:checked');
+
+    var gender = document.querySelector('#gender');
     
     // Extract the values of the checked checkboxes
     var checkedValues = Array.from(checkboxes).map(cb => cb.value);
@@ -793,9 +810,16 @@ function filters(){
     Reset();
     
     // Filter the apartments based on selected attributes
-    const filteredApartments = apartments.filter(apartment => 
+    var filteredApartments;
+    if(gender.value === "1"){ 
+        filteredApartments= maleApartments.filter(apartment => 
         checkedValues.every(attribute => apartment.attributes.includes(attribute))
-    );
+        );
+    }else{
+        filteredApartments = femaleApartments.filter(apartment => 
+            checkedValues.every(attribute => apartment.attributes.includes(attribute))
+        );
+    }
 
     document.querySelector("#ascending").addEventListener("click", () => {
         Reset();
@@ -813,8 +837,23 @@ function filters(){
     output(filteredApartments);   
     if (checkedValues.length === 0) {
         Reset();
-        output(apartments);
+        if(document.querySelector("#gender").value === "1"){
+            output(maleApartments);
+        }else{
+            output(femaleApartments);
+        }
     }
+}
+
+
+function clearFilter(){
+    var checkedCheckboxes = document.querySelectorAll('input[type=checkbox]:checked');
+    
+    // Uncheck each checkbox
+    checkedCheckboxes.forEach(cb => cb.checked = false);
+    Reset();
+    output(maleApartments);
+    filters();
 }
 
 
@@ -822,3 +861,7 @@ function filters(){
 document.querySelector("#filter").addEventListener("click", filters);
 document.querySelector("#ascending").addEventListener("click", sortPriceAsc);
 document.querySelector("#descending").addEventListener("click", sortPriceDsc);
+document.querySelector("#searchButton").addEventListener("click", search);
+document.querySelector("#clear").addEventListener("click", clearSearch);
+document.querySelector("#clearFilter").addEventListener("click", clearFilter);
+// document.querySelector("#search").addEventListener("keyup", search);

@@ -141,6 +141,7 @@ footer a{
     }
 }
 
+
 .filterButton{
     background-color: #f9f9f9;
     margin: 10px;
@@ -154,8 +155,16 @@ footer a{
 }
 
 #filter{
-    margin: 30px;
+    margin: 5px;
     background-color: #ffffff;
+    width: 90px;
+    margin-top: 10px;
+}
+
+#clearFilter{
+    margin: 5px;
+    background-color: #ffffff;
+    width: 90px;
 }
 
 .star{
@@ -186,14 +195,41 @@ footer a{
 }
 
 #search{
-    width: 638px;
+    width: 400px;
     height: 30px;
     border-radius: 5px;
     border: 1px solid #e0e0e0;
     padding: 5px;
-    grid-column: 2;
+    grid-column: 1;
     margin-left: 10px;
+    margin-right: 10px;
+}
+
+#searchButton{
+    background-color: #f9f9f9;
+    margin: 5px;
+    padding: 10px;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #e0e0e0;
+    text-align: center;
+    width: 100px;
+    display: inline-block;
+    grid-column: 2;
+}
+
+#clear{
+    background-color: #f9f9f9;
+    margin: 10px;
+    padding: 10px; 
     margin-right: 400px;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #e0e0e0;
+    text-align: center;
+    width: 100px;
+    display: inline-block;
+    grid-column: 3;
 }
 
 #ascending{
@@ -219,13 +255,18 @@ footer a{
     border-radius: 5px;
     box-shadow: 0 0 5px #e0e0e0;
     width: 80%;
-    height:350px;
+    height:375px;
     display: inline-block;
     grid-column: 1;
     grid-row: 3/span 2;
-    input{
+    input,h2,h3{
         margin: 10px;
     }
+}
+
+#gender{
+    margin: 10px;
+    width: 100px;
 }
 
 #productbox_container{
