@@ -687,6 +687,7 @@ let maleApartments= [
 ];
 
 let femaleApartments = [];
+
 function output(data){
     const outputListElement = document.querySelector("#productbox_container");
     data.forEach(item => {
@@ -864,4 +865,4 @@ document.querySelector("#descending").addEventListener("click", sortPriceDsc);
 document.querySelector("#searchButton").addEventListener("click", search);
 document.querySelector("#clear").addEventListener("click", clearSearch);
 document.querySelector("#clearFilter").addEventListener("click", clearFilter);
-// document.querySelector("#search").addEventListener("keyup", search);
+document.querySelector("#search").addEventListener("keyup", search);
