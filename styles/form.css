@@ -1,0 +1,64 @@
+main a {
+    text-decoration: none;
+  }
+  
+  main ul {
+    padding: 3px;
+  }
+  
+  .contactus {
+    margin: 10px 10px;
+    text-align: left;
+  }
+  
+  legend {
+    margin: 20px;
+  }
+  
+  label {
+    /* display: var(--main-display); */
+    text-align: center;
+    padding: 10px 20px;
+  }
+  
+  /* i {
+    display: var(--main-display);
+    height: 25px;
+    width: 300px;
+    padding: var(--main-padding)
+  } */
+  
+  input#submitBtn {
+    border: none;
+    background: var(--main-btn-color);
+    border-radius: 8px;
+    text-align: center;
+    line-height: 0px;
+    margin-top: 5px;
+    width: 50%;
+    transition: 0.2s ease;
+    color: #fff;
+  }
+  
+  input#submitBtn:hover {
+    background: #fff;
+    cursor: pointer;
+    color: #2F3E46;
+  }
+  
+  #rangevalue {
+    font-size: 2rem;
+    color: navy;
+  }
+  
+  #rangevalues {
+    display: flex;
+    margin: 0 0 0 25px;
+    width: 200px;
+  }
+  
+  #rangevalues option {
+    flex: 1 1 auto;
+    padding-left: 16px;
+    margin: 1px;
+  }

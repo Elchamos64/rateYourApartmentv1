@@ -39,7 +39,7 @@ nav a{
     transition: 1s;
 }
 
-nav a:hover {
+.navbar:hover {
     background-color: #bcbcbc;
 }
 
@@ -101,7 +101,8 @@ footer a{
 } */
 
 .loginButton{
-    background-color: #f9f9f9;
+    background-color: #475B5C;
+    color: #F4F1DE;
     margin: 5px; 
     margin-top:20px;
      padding: 5px; 
@@ -112,6 +113,12 @@ footer a{
     width: 150px;
     height: 50px;
     display: inline-block;
+    transition: 1s;
+  }
+
+  .loginButton:hover{
+    background-color: #F4F1DE;
+    color: #475B5C;
   }
 
 .approved-student{
