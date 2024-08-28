@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student Approved Housing</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <nav>
@@ -21,9 +22,10 @@
             <h1>Student Approved Housing</h1>
         </div>
         <div class="first_row">
-            <input type="text" id="search" name="search" placeholder="Search..">
-            <button type="submit" class="filterButton" id="searchButton">Search</button>
-            <button type="submit" class="filterButton" id="clear">Clear</button>
+            <div class="searchBox">
+                <input type="text" id="search" name="search" placeholder="Search..">
+                <button type="submit" id="searchButton"><i class="fa fa-search"></i></button>
+            </div>
             <button type="submit" class="filterButton" id="ascending">Price Ascending</button>
             <button type="submit" class="filterButton" id ="descending">Price Descending</button>
         </div>

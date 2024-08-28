@@ -31,8 +31,8 @@ nav,footer {
 nav a{
     padding:1em;
     text-decoration: none;
-    padding-left: 30px;
-    padding-right: 30px;
+    /* padding-left: 30px;
+    padding-right: 30px; */
     color: #000000;
     padding-bottom:10px;
     font-family: 'Roboto', sans-serif;
@@ -48,7 +48,7 @@ footer a{
     min-width: 120px;
     text-decoration: none;
     padding-bottom:10px;
-    padding-right: 250px;
+    /* padding-right: 250px; */
     color: #000000;
 }
 
@@ -102,9 +102,9 @@ footer a{
 
 .loginButton{
     background-color: #f9f9f9;
-    margin: 10px;
+    margin: 5px; 
     margin-top:20px;
-    padding: 10px;
+     padding: 5px; 
     border: 1px solid #e0e0e0;
     border-radius: 5px;
     box-shadow: 0 0 5px #e0e0e0;
@@ -188,32 +188,41 @@ footer a{
 .student_approved_header{
     grid-column: 1/5;
     grid-row: 1;
-    width: 100%;
+    width: 90%;
     height: 100;
     display: inline-block;
     margin-left: 10px;
 }
 
-#search{
-    width: 400px;
+.searchBox{
+    width:375px;
     height: 30px;
-    border-radius: 5px;
     border: 1px solid #e0e0e0;
-    padding: 5px;
-    grid-column: 1;
+    border-radius: 25px;
+    display: inline-block;
     margin-left: 10px;
+}
+
+#search{
+    width: 300px;
+    height: 10px;
+    border:none;
+    padding: 0px;
+    grid-column: 1;
     margin-right: 10px;
+    display: inline-block;
+    margin-left: 10px;
 }
 
 #searchButton{
-    background-color: #f9f9f9;
+    background-color: #ffffff;
     margin: 5px;
-    padding: 10px;
-    border: 1px solid #e0e0e0;
+    padding: 5px;
+    border: none;
     border-radius: 5px;
-    box-shadow: 0 0 5px #e0e0e0;
+    box-shadow:none;
     text-align: center;
-    width: 100px;
+    width: 10px;
     display: inline-block;
     grid-column: 2;
 }
@@ -278,34 +287,56 @@ footer a{
 }
 
 
-/* @media screen and (max-width: 1200px) {
+@media screen and (max-width: 600px) {
     nav {
        font-size:0.75em;
     }
     nav a{
-        padding:1em;
-        min-width: 120px;
-        text-decoration: none;
-        padding-left: 25px;
-        padding-right: 25px;
-        padding-bottom:10px;
+        display:none;
     }
     footer a{
-        padding:1em;
+        /* padding:1em;
         min-width: 120px;
         text-decoration: none;
-        padding-bottom:175px;
-        padding-right: 175px;
+        padding-bottom:175px; */
+        display: none;
+    }
+    .student_approved_header{
+        width: 450px;
     }
     .loginButton{
-        width: 100px;
-        height: 30px;
+        display:none;
+    }
+    .container{
+        display:block;
+    }
+    #productbox_container{
+       display:block;
     }
     .productbox{
+        margin:10px;
         width: 90%;
         img{
             width: 95%;
-            height:175px;
+            height:250px;
         }
     }
-} */
+    .filter{
+        display:none;
+    }
+    #searchButton{
+        display:none;
+    }
+    #clear{
+        display:none;
+    }
+    #ascending{
+        display:none;
+    }
+    #descending{
+        display:none;
+    }
+    #search{
+        width: 200px;
+    }
+}

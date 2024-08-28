@@ -864,4 +864,4 @@ document.querySelector("#descending").addEventListener("click", sortPriceDsc);
 document.querySelector("#searchButton").addEventListener("click", search);
 document.querySelector("#clear").addEventListener("click", clearSearch);
 document.querySelector("#clearFilter").addEventListener("click", clearFilter);
-// document.querySelector("#search").addEventListener("keyup", search);
+document.querySelector("#search").addEventListener("keyup", search);
