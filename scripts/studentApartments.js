@@ -790,12 +790,6 @@ function search(){
     output(searchResults);
 }
 
-function clearSearch(){
-    document.querySelector("#search").value = "";
-    Reset();
-    output(maleApartments);
-}
-
 
 function filters(){
     // Select all checked checkboxes
@@ -845,14 +839,11 @@ function filters(){
     }
 }
 
-
 function clearFilter(){
     var checkedCheckboxes = document.querySelectorAll('input[type=checkbox]:checked');
-    
     // Uncheck each checkbox
     checkedCheckboxes.forEach(cb => cb.checked = false);
     Reset();
-    output(maleApartments);
     filters();
 }
 
@@ -862,6 +853,5 @@ document.querySelector("#filter").addEventListener("click", filters);
 document.querySelector("#ascending").addEventListener("click", sortPriceAsc);
 document.querySelector("#descending").addEventListener("click", sortPriceDsc);
 document.querySelector("#searchButton").addEventListener("click", search);
-document.querySelector("#clear").addEventListener("click", clearSearch);
 document.querySelector("#clearFilter").addEventListener("click", clearFilter);
 document.querySelector("#search").addEventListener("keyup", search);
