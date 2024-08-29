@@ -143,8 +143,13 @@ footer a{
     transition: 1s;
   }
 
+  .registerButton:hover{
+    background-color: #fff;
+    color: #475B5C;
+  }
+
   .loginButton:hover{
-    background-color: #e0e0e0;
+    background-color: #fff;
     color: #475B5C;
   }
 
@@ -155,9 +160,35 @@ footer a{
 
 .categories{
     padding: 40px;
-    height: 400px;
 }
 
+.category {
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.category a {
+    height: 80%;
+    width: 20%;
+    margin: 20px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    text-decoration: none;
+    background-color: #475B5C;
+    color: #fff;
+    border-radius: 10px;
+    z-index: 10000;
+    font-size: medium;
+    transition: 0.5s;
+}
+
+.category a:hover{
+    font-size: large;
+    background-color: #81b29a;
+}
 .productbox{
     background-color: #f9f9f9;
     margin: 10px;
@@ -374,3 +405,4 @@ footer a{
         width: 200px;
     }
 }
+
