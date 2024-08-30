@@ -374,7 +374,7 @@ let maleApartments= [
     },
     {
         "id": 32,
-        "imageUrl": "images/Kensington.jpeg",
+        "imageUrl": "images/kensington_manor.jpg",
         "name": "Kensington Manor",
         "address": "345 S 2nd E",
         "city": "Rexburg",
@@ -790,6 +790,37 @@ function search(){
     output(searchResults);
 }
 
+let minValue = document.getElementById("priceMinValue");
+let maxValue = document.getElementById("priceMaxValue");
+
+const rangeFill = document.querySelector(".range-fill");
+
+const inputElements = document.querySelectorAll("input[type='range']");
+
+
+function validateRange(){
+    let min = parseInt(inputElements[0].value);
+    let max = parseInt(inputElements[1].value);
+
+    if(min > max){
+        inputElements[0].value = max;
+        inputElements[1].value = min;
+    }
+
+    const minPercentage = (min / 2000) * 100;
+    const maxPercentage = (max / 2000) * 100;
+    rangeFill.style.left = minPercentage + "%";
+    rangeFill.style.width = maxPercentage - minPercentage + "%";
+
+    minValue.innerHTML = "$" + min;
+    maxValue.innerHTML = "$" + max;
+}
+
+inputElements.forEach(element => {
+    element.addEventListener("input", validateRange);
+});
+
+validateRange();
 
 function filters(){
     // Select all checked checkboxes
@@ -815,6 +846,10 @@ function filters(){
         );
     }
 
+    filteredApartments = filteredApartments.filter(apartment => 
+        apartment.price >= parseInt(inputElements[0].value) && apartment.price <= parseInt(inputElements[1].value));
+    output(filteredApartments);
+
     document.querySelector("#ascending").addEventListener("click", () => {
         Reset();
         filteredApartments.sort(obj_sort_asc);
@@ -827,22 +862,28 @@ function filters(){
         output(filteredApartments);
     });
     
-    // Output the filtered apartments
-    output(filteredApartments);   
-    if (checkedValues.length === 0) {
-        Reset();
-        if(document.querySelector("#gender").value === "1"){
-            output(maleApartments);
-        }else{
-            output(femaleApartments);
-        }
-    }
+    // Output the filtered apartments 
+    // if (checkedValues.length === 0) {
+    //     Reset();
+    //     if(document.querySelector("#gender").value === "1"){
+    //         output(maleApartments);
+    //     }else{
+    //         output(femaleApartments);
+    //     }
+    // }
 }
 
 function clearFilter(){
     var checkedCheckboxes = document.querySelectorAll('input[type=checkbox]:checked');
     // Uncheck each checkbox
     checkedCheckboxes.forEach(cb => cb.checked = false);
+    // Reset the range slider
+    inputElements[0].value = 0;
+    inputElements[1].value = 2000;
+    rangeFill.style.left = "0%";
+    rangeFill.style.width = "100%";
+    minValue.innerHTML = "$0";
+    maxValue.innerHTML = "$2000";
     Reset();
     filters();
 }
