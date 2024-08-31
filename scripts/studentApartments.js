@@ -790,30 +790,46 @@ function search(){
     output(searchResults);
 }
 
-let minValue = document.getElementById("priceMinValue");
-let maxValue = document.getElementById("priceMaxValue");
+let minPriceValue = document.getElementById("priceMinValue");
+let maxPriceValue = document.getElementById("priceMaxValue");
+let minReviewValue = document.getElementById("reviewMinValue");
+let maxReviewValue = document.getElementById("reviewMaxValue");
 
-const rangeFill = document.querySelector(".range-fill");
+const priceRangeFill = document.querySelector("#price-range-fill");
+const reviewRangeFill = document.querySelector("#review-range-fill");
 
 const inputElements = document.querySelectorAll("input[type='range']");
 
 
 function validateRange(){
-    let min = parseInt(inputElements[0].value);
-    let max = parseInt(inputElements[1].value);
+    let minPrice = parseInt(inputElements[0].value);
+    let maxPrice = parseInt(inputElements[1].value);
+    let minReview = parseInt(inputElements[2].value);
+    let maxReview = parseInt(inputElements[3].value);
 
-    if(min > max){
-        inputElements[0].value = max;
-        inputElements[1].value = min;
+    if(minPrice > maxPrice){
+        inputElements[0].value = maxPrice;
+        inputElements[1].value = minPrice;
+    }
+    if(minReview > maxReview){
+        inputElements[2].value = maxReview;
+        inputElements[3].value = minReview;
     }
 
-    const minPercentage = (min / 2000) * 100;
-    const maxPercentage = (max / 2000) * 100;
-    rangeFill.style.left = minPercentage + "%";
-    rangeFill.style.width = maxPercentage - minPercentage + "%";
+    const minPricePercentage = (minPrice / 2000) * 100;
+    const maxPricePercentage = (maxPrice / 2000) * 100;
+    priceRangeFill.style.left = minPricePercentage + "%";
+    priceRangeFill.style.width = maxPricePercentage - minPricePercentage + "%";
 
-    minValue.innerHTML = "$" + min;
-    maxValue.innerHTML = "$" + max;
+    const minReviewPercentage = (minReview / 5) * 100;
+    const maxReviewPercentage = (maxReview / 5) * 100;
+    reviewRangeFill.style.left = minReviewPercentage + "%";
+    reviewRangeFill.style.width = maxReviewPercentage - minReviewPercentage + "%";
+    
+    minPriceValue.innerHTML = "$" + minPrice;
+    maxPriceValue.innerHTML = "$" + maxPrice;
+    minReviewValue.innerHTML = minReview;
+    maxReviewValue.innerHTML = maxReview;
 }
 
 inputElements.forEach(element => {
@@ -848,6 +864,8 @@ function filters(){
 
     filteredApartments = filteredApartments.filter(apartment => 
         apartment.price >= parseInt(inputElements[0].value) && apartment.price <= parseInt(inputElements[1].value));
+    filteredApartments = filteredApartments.filter(apartment => 
+        apartment.rating >= parseInt(inputElements[2].value) && apartment.rating <= parseInt(inputElements[3].value));
     output(filteredApartments);
 
     document.querySelector("#ascending").addEventListener("click", () => {
@@ -880,10 +898,16 @@ function clearFilter(){
     // Reset the range slider
     inputElements[0].value = 0;
     inputElements[1].value = 2000;
-    rangeFill.style.left = "0%";
-    rangeFill.style.width = "100%";
-    minValue.innerHTML = "$0";
-    maxValue.innerHTML = "$2000";
+    inputElements[2].value = 0;
+    inputElements[3].value = 5;
+    priceRangeFill.style.left = "0%";
+    priceRangeFill.style.width = "100%";
+    reviewRangeFill.style.left = "0%";
+    reviewRangeFill.style.width = "100%";
+    minPriceValue.innerHTML = "$0";
+    maxPriceValue.innerHTML = "$2000";
+    minReviewValue.innerHTML = "0";
+    maxReviewValue.innerHTML = "5";
     Reset();
     filters();
 }

@@ -223,7 +223,7 @@ footer a{
     display: inline-block;
 }
 
-.priceContent{
+.priceContent,.reviewContent{
     display:flex;
     justify-content: space-between;
     p{
@@ -386,19 +386,21 @@ input[type=range]::-webkit-slider-runnable-track {
     border-radius: 5px;
     box-shadow: 0 0 5px #e0e0e0;
     width: 80%;
-    height:475px;
+    height:675px;
     display: inline-block;
     grid-column: 1;
     grid-row: 3/span 2;
-    input[type="checkbox"],h2,h3{
+    input[type="checkbox"]{
         margin: 10px;
+    }
+    h3{
+        margin: 40px 0 10px 0;
     }
 }
 
 
 #gender{
-    margin: 10px;
-    width: 100px;
+    width: 150px;
 }
 
 #productbox_container{
