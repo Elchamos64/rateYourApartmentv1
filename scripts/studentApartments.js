@@ -51,7 +51,7 @@ let maleApartments= [
     {
         "id": 5,
         "imageUrl": "images/ridge.webp",
-        "name": "The Ridge",
+        "name": "Jordan Ridge",
         "address": "291 E 7th S",
         "city": "Rexburg",
         "state": "ID",
@@ -686,7 +686,201 @@ let maleApartments= [
     }
 ];
 
-let femaleApartments = [];
+let femaleApartments = [
+    {
+        "id": 1,
+        "imageUrl": "images/RoyalCrest.jpeg",
+        "name": "Royal Crest",
+        "address": "340 S 1st W",
+        "city": "Rexburg",
+        "state": "ID",
+        "zip": "83440",
+        "price": 1095,
+        "rating": 3.5,
+        "attributes": ["gym", "laundry", "music"]
+    },
+    {
+        "id": 2,
+        "imageUrl": "images/Snow.jpeg",
+        "name": "Snowview Apartments",
+        "address": "12 W 2nd S",
+        "city": "Rexburg",
+        "state": "ID",
+        "zip": "83440",
+        "price": 1345,
+        "rating": 4.0,
+        "attributes": []
+    },
+    {
+        "id": 3,
+        "imageUrl": "images/Carriage.jpeg",
+        "name": "Carriage House",
+        "address": "246 S 1st W",
+        "city": "Rexburg",
+        "state": "ID",
+        "zip": "83440",
+        "price": 1290,
+        "rating": 4.0,
+        "attributes": ["laundry", "music"]
+    },
+    {
+        "id": 4,
+        "imageUrl": "images/Whitfield.jpeg",
+        "name": "Whitfield House",
+        "address": "175 E 2nd S",
+        "city": "Rexburg",
+        "state": "ID",
+        "zip": "83440",
+        "price": 1290,
+        "rating": 4.0,
+        "attributes": ["laundry", "house","private room"]
+    },
+    {
+        "id": 5,
+        "imageUrl": "images/Chapman.jpeg",
+        "name": "Chapman House",
+        "address": "179 E 2nd S",
+        "city": "Rexburg",
+        "state": "ID",
+        "zip": "83440",
+        "price": 1295,
+        "rating": 4.0,
+        "attributes": ["laundry", "house","private room"]
+    },
+    {
+        "id": 6,
+        "imageUrl": "images/Grove.jpeg",
+        "name": "At the Grove",
+        "address": "349 S Harvard Ave",
+        "city": "Rexburg",
+        "state": "ID",
+        "zip": "83440",
+        "price": 1350,
+        "rating": 4.1,
+        "attributes": ["laundry","house"]
+    },
+    {
+        "id": 7,
+        "imageUrl": "images/davenport.jpeg",
+        "name": "Davenport Apartments",
+        "address": "145 W 3rd S",
+        "city": "Rexburg",
+        "state": "ID",
+        "zip": "83440",
+        "price": 945,
+        "rating": 3.0,
+        "attributes": ["music"]
+    },
+    {
+        "id": 8,
+        "imageUrl": "images/hillHouse.jpeg",
+        "name": "Hill's College Ave. House",
+        "address": "136 College Ave",
+        "city": "Rexburg",
+        "state": "ID",
+        "zip": "83440",
+        "price": 950,
+        "rating": 3.0,
+        "attributes": ["house","laundry"]
+    },
+    {
+        "id": 9,
+        "imageUrl": "images/Bayside.jpeg",
+        "name": "Bayside Manor",
+        "address": "248 1/2 Cornell Ave",
+        "city": "Rexburg",
+        "state": "ID",
+        "zip": "83440",
+        "price": 985,
+        "rating": 3.0,
+        "attributes": ["house","laundry"]
+    },
+    {
+        "id": 10,
+        "imageUrl": "images/Brooklyn.jpeg",
+        "name": "Brooklyn Apartments",
+        "address": "345 S 2nd W",
+        "city": "Rexburg",
+        "state": "ID",
+        "zip": "83440",
+        "price": 995,
+        "rating": 3.0,
+        "attributes": ["gym","music"]
+    },
+    {
+        "id": 11,
+        "imageUrl": "images/crestwoodCottage2.jpg",
+        "name": "Crestwood Cottage",
+        "address": "221 S 1st E",
+        "city": "Rexburg",
+        "state": "ID",
+        "zip": "83440",
+        "price": 995,
+        "rating": 3.0,
+        "attributes": ["house","laundry"]
+    },
+    {
+        "id": 12,
+        "imageUrl": "images/sunsetHall.jpeg",
+        "name": "Sunset Hall",
+        "address": "175 W 3rd S",
+        "city": "Rexburg",
+        "state": "ID",
+        "zip": "83440",
+        "price": 1025,
+        "rating": 3.0,
+        "attributes": ["house","laundry"]
+    },
+    {
+        "id": 13,
+        "imageUrl": "images/Abby.jpeg",
+        "name": "Abby Lane Manor",
+        "address": "437 S 4th W",
+        "city": "Rexburg",
+        "state": "ID",
+        "zip": "83440",
+        "price": 1050,
+        "rating": 3.0,
+        "attributes": ["private room"]
+    },
+    {
+        "id": 14,
+        "imageUrl": "images/CollegeAveApartments.jpeg",
+        "name": "College Ave. Apartments",
+        "address": "150 College Ave",    
+        "city": "Rexburg",
+        "state": "ID",
+        "zip": "83440",
+        "price": 1050,
+        "rating": 3.0,
+        "attributes": ["private room","laundry"]
+    },
+    {
+        "id": 15,
+        "imageUrl": "images/carriageTownHouse.jpeg",
+        "name": "Carriage Townhouse",
+        "address": "246 S 1st W",
+        "city": "Rexburg",
+        "state": "ID",
+        "zip": "83440",
+        "price": 1320,
+        "rating": 4.0,
+        "attributes": ["laundry","house"]
+    },
+    {
+        "id": 16,
+        "imageUrl": "images/legacyRidge.jpeg",
+        "name": "Legacy Ridge",
+        "address": "667 S 2nd E",
+        "city": "Rexburg",
+        "state": "ID",
+        "zip": "83440",
+        "price": 1799,
+        "rating": 4.7,
+        "attributes": ["laundry", "gym","private room","music"]
+    }
+
+];
 function output(data){
     const outputListElement = document.querySelector("#productbox_container");
     data.forEach(item => {
