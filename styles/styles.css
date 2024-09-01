@@ -39,7 +39,7 @@ nav a{
     padding-right: 30px; */
     color: #000000;
     font-family: 'Roboto', sans-serif;
-    transition: 1s;
+    transition: 0.2s;
 }
 
 .logo {
@@ -104,7 +104,7 @@ footer a{
     padding: 7.2px;
     justify-content: center;
     align-items: center;
-    transition: 0.5s;
+    transition: 0.2s;
 }
 /* nav a:link, nav a:visited, footer a:link, footer a:visited {
     color: var(--nav-link-color);
@@ -130,7 +130,7 @@ footer a{
     width: 80px;
     height: 50px;
     display: inline-block;
-    transition: 1s;
+    transition: 0.2s;
   }
 
   .registerButton{
@@ -144,7 +144,7 @@ footer a{
     width: 80px;
     height: 50px;
     display: inline-block;
-    transition: 1s;
+    transition: 0.2s;
   }
 
   .registerButton:hover{
@@ -192,8 +192,7 @@ footer a{
     border: 1px solid #e0e0e0;
     background-color: #f9f9f9;
     border-radius: 10px;
-    font-size: medium;
-    transition: 0.5s;
+    transition: 0.2s;
 }
 
 .link i {
@@ -203,6 +202,7 @@ footer a{
 .link a {
     text-decoration: none;
     color: #000000;
+    font-size: x-large;
 
 }
 .link:hover{
@@ -214,11 +214,11 @@ footer a{
     border: 1px solid #e0e0e0;
     border-radius: 10px;
     box-shadow: 0 0 5px #e0e0e0;
-    text-align: center;
+    text-align: left;
     color:black;
     width: 90%;
     display: inline-block;
-    transition: 0.5s;
+    transition: 0.2s;
     img{
         width: 100%;
         height:280px;
@@ -226,6 +226,10 @@ footer a{
         border-top-right-radius: 10px;
     }
 
+}
+
+.productinfo {
+    padding: 10px;
 }
 
 .productbox:hover{
@@ -338,6 +342,30 @@ input[type=range]::-webkit-slider-runnable-track {
     margin-left: 10px;
 }
 
+/* Back to Top Button Styles */
+#backToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 30px;
+    right: 10px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #475B5C;
+    color: white;
+    padding-left: 6px;
+    padding-right: 6px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 24px;
+    transition: 0.2s;
+  }
+  
+  #backToTopBtn:hover {
+    background-color: #e0e0e0; /* Add a dark-grey background on hover */
+    color: #475B5C;
+  }
+
 .searchBox{
     width:375px;
     height: 30px;
@@ -445,6 +473,6 @@ input[type=range]::-webkit-slider-runnable-track {
     background-color: rgb(0,0,0); /* Black fallback color */
     background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
     overflow-x: hidden; /* Disable horizontal scroll */
-    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+    transition: 0.2s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
 }
 
