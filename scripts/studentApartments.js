@@ -8,7 +8,8 @@ let maleApartments= [
         "city": "Rexburg",
         "state": "ID",
         "zip": "83440",
-        "price": 1750,
+        "priceMin": 1675,
+        "priceMax": 1825,
         "rating": 4.5,
         "attributes": ["laundry", "gym", "music"]
     },
@@ -20,7 +21,8 @@ let maleApartments= [
         "city": "Rexburg",
         "state": "ID",
         "zip": "83440",
-        "price": 1610,
+        "priceMin": 1529,
+        "priceMax": 1659,
         "rating": 3.8,
         "attributes": ["gym", "laundry", "music"],
     },
@@ -32,7 +34,8 @@ let maleApartments= [
         "city": "Rexburg",
         "state": "ID",
         "zip": "83440",
-        "price":1500,
+        "priceMin":1500,
+        "priceMax": 1500,
         "rating": 4.2,
         "attributes": ["gym", "laundry","music"]
     },
@@ -44,7 +47,8 @@ let maleApartments= [
         "city": "Rexburg",
         "state": "ID",
         "zip": "83440",
-        "price": 1675,
+        "priceMin": 1545,
+        "priceMax": 1795,
         "rating": 4.0,
         "attributes": ["laundry", "gym", "music"]
     },
@@ -56,7 +60,8 @@ let maleApartments= [
         "city": "Rexburg",
         "state": "ID",
         "zip": "83440",
-        "price": 1799,
+        "priceMin": 1799,
+        "priceMax": 1799,
         "rating": 4.7,
         "attributes": ["laundry", "gym","private room"]
     },
@@ -68,7 +73,8 @@ let maleApartments= [
         "city": "Rexburg",
         "state": "ID",
         "zip": "83440",
-        "price": 1670,
+        "priceMin": 1670,
+        "priceMax": 1670,
         "rating": 3.5,
         "attributes": ["gym","laundry","music"]
     },
@@ -80,7 +86,8 @@ let maleApartments= [
         "city": "Rexburg",
         "state": "ID",
         "zip": "83340",
-        "price": 1550,
+        "priceMin": 1499,
+        "priceMax": 1599,
         "rating": 4.8,
         "attributes": ["gym", "laundry", "music"]
     },
@@ -92,7 +99,8 @@ let maleApartments= [
         "city": "Rexburg",
         "state": "ID",
         "zip": "83440",
-        "price": 895,
+        "priceMin": 895,
+        "priceMax": 895,
         "rating": 3.0,
         "attributes": ["house"]
     },
@@ -104,7 +112,8 @@ let maleApartments= [
         "city": "Rexburg",
         "state": "ID",
         "zip": "83440",
-        "price": 900,
+        "priceMin": 900,
+        "priceMax": 900,
         "rating": 3.2,
         "attributes": []
     },
@@ -116,7 +125,8 @@ let maleApartments= [
         "city": "Rexburg",
         "state": "ID",
         "zip": "83440",
-        "price": 1025,
+        "priceMin": 975,
+        "priceMax": 1075,
         "rating": 3.6,
         "attributes": []
     },
@@ -128,7 +138,8 @@ let maleApartments= [
         "city": "Rexburg",
         "state": "ID",
         "zip": "83440",
-        "price": 995,
+        "priceMin": 995,
+        "priceMax": 995,
         "rating": 3.0,
         "attributes": []
     },
@@ -140,7 +151,8 @@ let maleApartments= [
         "city": "Rexburg",
         "state": "ID",
         "zip": "83440",
-        "price": 995,
+        "priceMin": 995,
+        "priceMax": 995,
         "rating": 3.0,
         "attributes": ["music"]
     },
@@ -152,7 +164,8 @@ let maleApartments= [
         "city": "Rexburg",
         "state": "ID",
         "zip": "83440",
-        "price": 1045,
+        "priceMin": 995,
+        "priceMax": 1095,
         "rating": 3.4,
         "attributes": ["music"]
     },
@@ -164,7 +177,8 @@ let maleApartments= [
         "city": "Rexburg",
         "state": "ID",
         "zip": "83440",
-        "price": 1045,
+        "priceMin": 995,
+        "priceMax": 1095,
         "rating": 3.4,
         "attributes": ["house, laundry"]
     },
@@ -176,7 +190,8 @@ let maleApartments= [
         "city": "Rexburg",
         "state": "ID",
         "zip": "83440",
-        "price": 995,
+        "priceMin": 995,
+        "priceMax": 995,
         "rating": 3.0,
         "attributes": []
     },
@@ -188,7 +203,8 @@ let maleApartments= [
         "city": "Rexburg",
         "state": "ID",
         "zip": "83440",
-        "price": 1075,
+        "priceMin": 999,
+        "priceMax": 1149,
         "rating": 3.5,
         "attributes": []
     },
@@ -200,7 +216,8 @@ let maleApartments= [
         "city": "Rexburg",
         "state": "ID",
         "zip": "83440",
-        "price": 1025,
+        "priceMin": 1025,
+        "priceMax": 1025,
         "rating": 3.6,
         "attributes": ["gym", "laundry"]
     },
@@ -212,7 +229,8 @@ let maleApartments= [
         "city": "Rexburg",
         "state": "ID",
         "zip": "83440",
-        "price": 1102,
+        "priceMin": 1045,
+        "priceMax": 1160,
         "rating": 3.8,
         "attributes": ["laundry"]
     },
@@ -224,7 +242,8 @@ let maleApartments= [
         "city": "Rexburg",
         "state": "ID",
         "zip": "83440",
-        "price": 1050,
+        "priceMin": 1050,
+        "priceMax": 1050,
         "rating": 3.5,
         "attributes": ["laundry", "private room","house"]
     },
@@ -236,7 +255,8 @@ let maleApartments= [
         "city": "Rexburg",
         "state": "ID",
         "zip": "83440",
-        "price": 1050,
+        "priceMin": 1050,
+        "priceMax": 1050,
         "rating": 3.5,
         "attributes": ["music", "laundry"]
     },
@@ -248,7 +268,8 @@ let maleApartments= [
         "city": "Rexburg",
         "state": "ID",
         "zip": "83440",
-        "price": 1060,
+        "priceMin": 1060,
+        "priceMax": 1060,
         "rating": 3.6,
         "attributes": ["music", "laundry"]
     },
@@ -260,7 +281,8 @@ let maleApartments= [
         "city": "Rexburg",
         "state": "ID",
         "zip": "83440",
-        "price": 1190,
+        "priceMin": 1080,
+        "priceMax": 1300,
         "rating": 4.0,
         "attributes": []
     },
@@ -272,7 +294,8 @@ let maleApartments= [
         "city": "Rexburg",
         "state": "ID",
         "zip": "83440",
-        "price": 1100,
+        "priceMin": 1084,
+        "priceMax": 1104,
         "rating": 4.0,
         "attributes": ["gym","music"]
     },
@@ -284,7 +307,8 @@ let maleApartments= [
         "city": "Rexburg",
         "state": "ID",
         "zip": "83440",
-        "price": 1095,
+        "priceMin": 1095,
+        "priceMax": 1095,
         "rating": 4.0,
         "attributes": ["laundry"]
     },
@@ -296,7 +320,8 @@ let maleApartments= [
         "city": "Rexburg",
         "state": "ID",
         "zip": "83440",
-        "price": 1145,
+        "priceMin": 1095,
+        "priceMax": 1195,
         "rating": 4.2,
         "attributes": []
     },
@@ -308,7 +333,8 @@ let maleApartments= [
         "city": "Rexburg",
         "state": "ID",
         "zip": "83440",
-        "price": 1150,
+        "priceMin": 1095,
+        "priceMax": 1225,
         "rating": 4.2,
         "attributes": ["laundry"]
     },
@@ -320,7 +346,8 @@ let maleApartments= [
         "city": "Rexburg",
         "state": "ID",
         "zip": "83440",
-        "price": 1425,
+        "priceMin": 1100,
+        "priceMax": 1750,
         "rating": 4.5,
         "attributes": ["gym", "music"]
     },
@@ -332,7 +359,8 @@ let maleApartments= [
         "city": "Rexburg",
         "state": "ID",
         "zip": "83440",
-        "price": 1105,
+        "priceMin": 1105,
+        "priceMax": 1105,
         "rating": 4.0,
         "attributes": []
     },
@@ -344,7 +372,8 @@ let maleApartments= [
         "city": "Rexburg",
         "state": "ID",
         "zip": "83440",
-        "price": 1130,
+        "priceMin": 1130,
+        "priceMax": 1130,
         "rating": 4.1,
         "attributes": ["laundry"]
     },
@@ -356,7 +385,8 @@ let maleApartments= [
         "city": "Rexburg",
         "state": "ID",
         "zip": "83440",
-        "price": 1170,
+        "priceMin": 1145,
+        "priceMax": 1195,
         "rating": 4.1,
         "attributes": ["laundry"]
     },
@@ -368,7 +398,8 @@ let maleApartments= [
         "city": "Rexburg",
         "state": "ID",
         "zip": "83440",
-        "price": 1317,
+        "priceMin": 1160,
+        "priceMax": 1475,
         "rating": 4.3,
         "attributes": []
     },
@@ -380,7 +411,8 @@ let maleApartments= [
         "city": "Rexburg",
         "state": "ID",
         "zip": "83440",
-        "price": 1175,
+        "priceMin": 1175,
+        "priceMax": 1175,
         "rating": 4.1,
         "attributes": ["gym","music"]
     },
@@ -392,7 +424,8 @@ let maleApartments= [
         "city": "Rexburg",
         "state": "ID",
         "zip": "83440",
-        "price": 1179,
+        "priceMin": 1179,
+        "priceMax": 1179,
         "rating": 4.1,
         "attributes": ["laundry","gym","music"]
     },
@@ -404,7 +437,8 @@ let maleApartments= [
         "city": "Rexburg",
         "state": "ID",
         "zip": "83440",
-        "price": 1200,
+        "priceMin": 1200,
+        "priceMax": 1200,
         "rating": 4.2,
         "attributes": ["gym","music"]
     },
@@ -416,7 +450,8 @@ let maleApartments= [
         "city": "Rexburg",
         "state": "ID",
         "zip": "83440",
-        "price": 1460,
+        "priceMin": 1225,
+        "priceMax": 1695,
         "rating": 4.6,
         "attributes": ["private room","laundry"]
     },
@@ -428,7 +463,8 @@ let maleApartments= [
         "city": "Rexburg",
         "state": "ID",
         "zip": "83440",
-        "price": 1460,
+        "priceMin": 1225,
+        "priceMax": 1625,
         "rating": 4.6,
         "attributes": ["private room","gym"]
     },
@@ -440,7 +476,8 @@ let maleApartments= [
         "city": "Rexburg",
         "state": "ID",
         "zip": "83440",
-        "price": 1240,
+        "priceMin": 1240,
+        "priceMax": 1240,
         "rating": 4.3,
         "attributes": ["laundry","house"]
     },
@@ -452,7 +489,8 @@ let maleApartments= [
         "city": "Rexburg",
         "state": "ID",
         "zip": "83440",
-        "price": 1450,
+        "priceMin": 1250,
+        "priceMax": 1650,
         "rating": 4.5,
         "attributes": ["gym","music","laundry","private room"]
     },
@@ -464,7 +502,8 @@ let maleApartments= [
         "city": "Rexburg",
         "state": "ID",
         "zip": "83440",
-        "price": 1400,
+        "priceMin": 1300,
+        "priceMax": 1500,
         "rating": 4.4,
         "attributes": ["private room","house","laundry"]
     },
@@ -476,7 +515,8 @@ let maleApartments= [
         "city": "Rexburg",
         "state": "ID",
         "zip": "83440",
-        "price": 1330,
+        "priceMin": 1330,
+        "priceMax": 1330,
         "rating": 4.3,
         "attributes": ["house","laundry"]
     },
@@ -488,7 +528,8 @@ let maleApartments= [
         "city": "Rexburg",
         "state": "ID",
         "zip": "83440",
-        "price": 1350,
+        "priceMin": 1350,
+        "priceMax": 1350,
         "rating": 4.3,
         "attributes": ["gym","music"]
     },
@@ -500,7 +541,8 @@ let maleApartments= [
         "city": "Rexburg",
         "state": "ID",
         "zip": "83440",
-        "price": 1400,
+        "priceMin": 1375,
+        "priceMax": 1425,
         "rating": 4.4,
         "attributes": ["private room","laundry"]
     },
@@ -512,7 +554,8 @@ let maleApartments= [
         "city": "Rexburg",
         "state": "ID",
         "zip": "83440",
-        "price": 1400,
+        "priceMin": 1400,
+        "priceMax": 1400,
         "rating": 4.5,
         "attributes": ["gym","laundry","music"]
     },
@@ -524,7 +567,8 @@ let maleApartments= [
         "city": "Rexburg",
         "state": "ID",
         "zip": "83440",
-        "price": 1495,
+        "priceMin": 1415,
+        "priceMax": 1575,
         "rating": 4.6,
         "attributes": ["gym","laundry","private room"]
     },
@@ -536,7 +580,8 @@ let maleApartments= [
         "city": "Rexburg",
         "state": "ID",
         "zip": "83440",
-        "price": 1445,
+        "priceMin": 1445,
+        "priceMax": 1445,
         "rating": 4.7,
         "attributes": ["gym","laundry","music"]
     },
@@ -548,7 +593,8 @@ let maleApartments= [
         "city": "Rexburg",
         "state": "ID",
         "zip": "83440",
-        "price": 1480,
+        "priceMin": 1480,
+        "priceMax": 1480,
         "rating": 4.8,
         "attributes": ["gym","laundry","music"]
     },
@@ -560,7 +606,8 @@ let maleApartments= [
         "city": "Rexburg",
         "state": "ID",
         "zip": "83440",
-        "price": 1620,
+        "priceMin": 1499,
+        "priceMax": 1599,
         "rating": 4.9,
         "attributes": ["gym","music"]
     },
@@ -572,7 +619,8 @@ let maleApartments= [
         "city": "Rexburg",
         "state": "ID",
         "zip": "83440",
-        "price": 1550,
+        "priceMin": 1550,
+        "priceMax": 1550,
         "rating": 4.8,
         "attributes": ["gym","laundry","music"]
     },
@@ -584,7 +632,8 @@ let maleApartments= [
         "city": "Rexburg",
         "state": "ID",
         "zip": "83440",
-        "price": 1645,
+        "priceMin": 1615,
+        "priceMax": 1675,
         "rating": 4.9,
         "attributes": ["gym","laundry","music"]
     },
@@ -596,7 +645,8 @@ let maleApartments= [
         "city": "Rexburg",
         "state": "ID",
         "zip": "83440",
-        "price": 1695,
+        "priceMin": 1695,
+        "priceMax": 1695,
         "rating": 4.9,
         "attributes": ["house","laundry","private room"]
     },
@@ -608,7 +658,8 @@ let maleApartments= [
         "city": "Rexburg",
         "state": "ID",
         "zip": "83440",
-        "price": 1725,
+        "priceMin": 1710,
+        "priceMax": 1740,
         "rating": 4.9,
         "attributes": ["gym","laundry","music"]
     },
@@ -620,7 +671,8 @@ let maleApartments= [
         "city": "Rexburg",
         "state": "ID",
         "zip": "83440",
-        "price": 1820,
+        "priceMin": 1740,
+        "priceMax": 1900,
         "rating": 4.9,
         "attributes": ["gym","laundry","music"]
     },
@@ -632,7 +684,8 @@ let maleApartments= [
         "city": "Rexburg",
         "state": "ID",
         "zip": "83440",
-        "price": 1850,
+        "priceMin": 1749,
+        "priceMax": 1949,
         "rating": 4.9,
         "attributes": ["gym","laundry","music"]
     },
@@ -644,7 +697,8 @@ let maleApartments= [
         "city": "Rexburg",
         "state": "ID",
         "zip": "83440",
-        "price": 1750,
+        "priceMin": 1750,
+        "priceMax": 1750,
         "rating": 4.9,
         "attributes": ["private room"]
     },
@@ -656,7 +710,8 @@ let maleApartments= [
         "city": "Rexburg",
         "state": "ID",
         "zip": "83440",
-        "price": 1795,
+        "priceMin": 1770,
+        "priceMax": 1820,
         "rating": 4.9,
         "attributes": ["gym","private room","music"]
     },
@@ -668,7 +723,8 @@ let maleApartments= [
         "city": "Rexburg",
         "state": "ID",
         "zip": "83440",
-        "price": 1775,
+        "priceMin": 1775,
+        "priceMax": 1775,
         "rating": 4.9,
         "attributes": ["gym","private room","music"]
     },
@@ -680,7 +736,8 @@ let maleApartments= [
         "city": "Rexburg",
         "state": "ID",
         "zip": "83440",
-        "price": 1875,
+        "priceMin": 1875,
+        "priceMax": 1875,
         "rating": 4.9,
         "attributes": ["private room","laundry"]
     }
@@ -695,7 +752,8 @@ let femaleApartments = [
         "city": "Rexburg",
         "state": "ID",
         "zip": "83440",
-        "price": 1095,
+        "priceMin": 1095,
+        "priceMax": 1095,
         "rating": 3.5,
         "attributes": ["gym", "laundry", "music"]
     },
@@ -707,7 +765,8 @@ let femaleApartments = [
         "city": "Rexburg",
         "state": "ID",
         "zip": "83440",
-        "price": 1345,
+        "priceMin": 1245,
+        "priceMax": 1445,
         "rating": 4.0,
         "attributes": []
     },
@@ -719,7 +778,8 @@ let femaleApartments = [
         "city": "Rexburg",
         "state": "ID",
         "zip": "83440",
-        "price": 1290,
+        "priceMin": 1285,
+        "priceMax": 1295,
         "rating": 4.0,
         "attributes": ["laundry", "music"]
     },
@@ -731,7 +791,8 @@ let femaleApartments = [
         "city": "Rexburg",
         "state": "ID",
         "zip": "83440",
-        "price": 1290,
+        "priceMin": 1290,
+        "priceMax": 1695,
         "rating": 4.0,
         "attributes": ["laundry", "house","private room"]
     },
@@ -743,7 +804,8 @@ let femaleApartments = [
         "city": "Rexburg",
         "state": "ID",
         "zip": "83440",
-        "price": 1295,
+        "priceMin": 1295,
+        "priceMax": 1695,
         "rating": 4.0,
         "attributes": ["laundry", "house","private room"]
     },
@@ -755,7 +817,8 @@ let femaleApartments = [
         "city": "Rexburg",
         "state": "ID",
         "zip": "83440",
-        "price": 1350,
+        "priceMin": 1350,
+        "priceMax": 1350,
         "rating": 4.1,
         "attributes": ["laundry","house"]
     },
@@ -767,7 +830,8 @@ let femaleApartments = [
         "city": "Rexburg",
         "state": "ID",
         "zip": "83440",
-        "price": 945,
+        "priceMin": 945,
+        "priceMax": 945,
         "rating": 3.0,
         "attributes": ["music"]
     },
@@ -779,7 +843,8 @@ let femaleApartments = [
         "city": "Rexburg",
         "state": "ID",
         "zip": "83440",
-        "price": 950,
+        "priceMin": 950,
+        "priceMax": 950,
         "rating": 3.0,
         "attributes": ["house","laundry"]
     },
@@ -791,7 +856,8 @@ let femaleApartments = [
         "city": "Rexburg",
         "state": "ID",
         "zip": "83440",
-        "price": 985,
+        "priceMin": 985,
+        "priceMax": 985,
         "rating": 3.0,
         "attributes": ["house","laundry"]
     },
@@ -803,7 +869,8 @@ let femaleApartments = [
         "city": "Rexburg",
         "state": "ID",
         "zip": "83440",
-        "price": 995,
+        "priceMin": 995,
+        "priceMax": 995,
         "rating": 3.0,
         "attributes": ["gym","music"]
     },
@@ -815,7 +882,8 @@ let femaleApartments = [
         "city": "Rexburg",
         "state": "ID",
         "zip": "83440",
-        "price": 995,
+        "priceMin": 995,
+        "priceMax": 995,
         "rating": 3.0,
         "attributes": ["house","laundry"]
     },
@@ -827,7 +895,8 @@ let femaleApartments = [
         "city": "Rexburg",
         "state": "ID",
         "zip": "83440",
-        "price": 1025,
+        "priceMin": 1025,
+        "priceMax": 1090,
         "rating": 3.0,
         "attributes": ["house","laundry"]
     },
@@ -839,7 +908,8 @@ let femaleApartments = [
         "city": "Rexburg",
         "state": "ID",
         "zip": "83440",
-        "price": 1050,
+        "priceMin": 1050,
+        "priceMax": 1395,
         "rating": 3.0,
         "attributes": ["private room"]
     },
@@ -851,7 +921,8 @@ let femaleApartments = [
         "city": "Rexburg",
         "state": "ID",
         "zip": "83440",
-        "price": 1050,
+        "priceMin": 1050,
+        "priceMax": 1395,
         "rating": 3.0,
         "attributes": ["private room","laundry"]
     },
@@ -863,7 +934,8 @@ let femaleApartments = [
         "city": "Rexburg",
         "state": "ID",
         "zip": "83440",
-        "price": 1320,
+        "priceMin": 1320,
+        "priceMax": 1320,
         "rating": 4.0,
         "attributes": ["laundry","house"]
     },
@@ -875,39 +947,62 @@ let femaleApartments = [
         "city": "Rexburg",
         "state": "ID",
         "zip": "83440",
-        "price": 1799,
+        "priceMin": 1799,
+        "priceMax": 1799,
         "rating": 4.7,
         "attributes": ["laundry", "gym","private room","music"]
-    }
+    },
+    {
+        "id": 17,
+        "imageUrl": "images/Hillcrest.jpeg",
+        "name": "Hillcrest Townhouses-Women",
+        "address": "465 S 2nd E",
+        "city": "Rexburg",
+        "state": "ID",
+        "zip": "83440",
+        "priceMin": 1225,
+        "priceMax": 1625,
+        "rating": 4.6,
+        "attributes": ["private room","gym","laundry"]
+    },
 
 ];
 function output(data){
     const outputListElement = document.querySelector("#productbox_container");
     data.forEach(item => {
-        outputListElement.innerHTML += `<a href="#"><div class="productbox">
-        <img src="${item.imageUrl}" alt=${item.name}>
-        <h3>${item.name}</h3>
-        <p>$${item.price}/Semester<p>
-        <h4>${item.rating} / 5</h4>
-        </div></a>`;       
+        if(item.priceMin === item.priceMax){
+            outputListElement.innerHTML += `<a href="#"><div class="productbox">
+            <img src="${item.imageUrl}" alt=${item.name}>
+            <h3>${item.name}</h3>
+            <p>$${item.priceMin}<p>
+            <h4>${item.rating} / 5</h4>
+            </div></a>`;   
+        }else{
+            outputListElement.innerHTML += `<a href="#"><div class="productbox">
+            <img src="${item.imageUrl}" alt=${item.name}>
+            <h3>${item.name}</h3>
+            <p>$${item.priceMin} - $${item.priceMax}<p>
+            <h4>${item.rating} / 5</h4>
+            </div></a>`;
+        }
     });
 }
 function Reset(){
     document.querySelector("#productbox_container").innerHTML = "";
 }
 function obj_sort_asc(a,b){
-    if (a.price < b.price) {
+    if (a.priceMin < b.priceMin) {
         return -1;
-    } else if (a.price > b.price){
+    } else if (a.priceMin > b.priceMin){
         return 1;
     } else{
         return 0;
     }
 }
 function obj_sort_dsc(a,b){
-    if(a.price < b.price) {
+    if(a.priceMin < b.priceMin) {
         return 1;
-    } else if (a.price > b.price){
+    } else if (a.priceMin > b.priceMin){
         return -1;
     } else{
         return 0;
@@ -1057,7 +1152,7 @@ function filters(){
     }
 
     filteredApartments = filteredApartments.filter(apartment => 
-        apartment.price >= parseInt(inputElements[0].value) && apartment.price <= parseInt(inputElements[1].value));
+        apartment.priceMin >= parseInt(inputElements[0].value) && apartment.priceMin <= parseInt(inputElements[1].value));
     filteredApartments = filteredApartments.filter(apartment => 
         apartment.rating >= parseInt(inputElements[2].value) && apartment.rating <= parseInt(inputElements[3].value));
     output(filteredApartments);
