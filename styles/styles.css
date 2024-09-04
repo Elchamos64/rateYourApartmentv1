@@ -275,6 +275,7 @@ footer a{
 
 input[type=range]{
     -webkit-appearance: none;
+    appearance: none;
     width: 100%;
     background: transparent;
     position: absolute;
@@ -283,6 +284,7 @@ input[type=range]{
 
 input[type=range]::-webkit-slider-thumb {
     -webkit-appearance: none;
+    appearance: none;
     width: 15px;
     height: 15px;
     border-radius: 50%;
