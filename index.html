@@ -11,7 +11,32 @@
 <body>
     <header>
         <nav>
+            <script>/* Open when someone clicks on the span element */
+                function openNav() {
+                  document.getElementById("myNav").style.width = "50%";
+                } 
+            </script>
+            <script>function closeNav() {
+                document.getElementById("myNav").style.width = "0%";
+              }
+            </script>
             <a href="index.html" class="logo"><img src="images/Rate Your Apartment Rexburg,ID.png" alt="logo"style="width:100px;height:40px;"></a>
+            <div class="ham_logo">
+                <span onclick="openNav()">
+                        <a href="#">&#9776;</a>
+                </span>
+            </div>
+            <section id="myNav" class="overlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="overlay-content">
+                    <a href="index.html">Home</a>
+                    <a href="studentApproved.html">Student Housing</a>
+                    <a href="community.html">Community Housing</a>
+                    <a href="contactUs.html" >Contact Us</a>
+                    <button class="loginButton" id="signIn">Sign In</button>
+                    <button class="registerButton" id="register">Register</button>
+                </div>
+            </section>
             <section class="navbar">
                 <a href="index.html">Home</a>
                 <a href="studentApproved.html">Student Approved Housing</a>
@@ -65,6 +90,9 @@
                 </div>
 
         </section>
+        <div class="viewMore">
+            <a href="studentApproved.html"><button id="viewMoreButton">View More</button></a>
+        </div>
         <section class="categories">
             <h3>Browse by categories</h3>
             <section class="category">

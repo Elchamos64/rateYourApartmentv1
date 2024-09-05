@@ -17,6 +17,10 @@
     .container{
         display:block;
     }
+    .filter{
+        width: 86%;
+        margin: 10px;
+    }
     #productbox_container{
        display:block;
     }
@@ -24,7 +28,7 @@
         margin:10px;
         width: 90%;
         img{
-            width: 95%;
+            width: 100%;
             height:350px;
         }
     }

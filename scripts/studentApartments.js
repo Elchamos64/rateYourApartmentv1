@@ -973,16 +973,16 @@ function output(data){
         if(item.priceMin === item.priceMax){
             outputListElement.innerHTML += `<a href="#"><div class="productbox">
             <img src="${item.imageUrl}" alt=${item.name}>
-            <h3>${item.name}</h3>
-            <p>$${item.priceMin}<p>
-            <h4>${item.rating} / 5</h4>
+            <h2>${item.name}</h2>
+            <h4>$${item.priceMin}<h4>
+            <h3>${item.rating} / 5</h3>
             </div></a>`;   
         }else{
             outputListElement.innerHTML += `<a href="#"><div class="productbox">
             <img src="${item.imageUrl}" alt=${item.name}>
-            <h3>${item.name}</h3>
-            <p>$${item.priceMin} - $${item.priceMax}<p>
-            <h4>${item.rating} / 5</h4>
+            <h2>${item.name}</h2>
+            <h4>$${item.priceMin} - $${item.priceMax}<h4>
+            <h3>${item.rating} / 5</h3>
             </div></a>`;
         }
     });
