@@ -205,6 +205,11 @@ footer a{
     background-color: #f9f9f9;
     border-radius: 10px;
     transition: 0.2s;
+    max-height: 90%;
+    overflow: auto;
+    .BrowseButton{
+        display: none;
+    }
 }
 
 .link i {
@@ -219,6 +224,26 @@ footer a{
 }
 .link:hover{
     box-shadow: 0 0 30px #e0e0e0;
+    i{
+        display: none;
+    }
+    gap: 10px;
+    .BrowseButton{
+        display: block;
+    }
+    background-color: rgba(108, 107, 107, 0.325);
+}
+
+.BrowseButton{
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.2s;
+    width: 90%;
+    font-size: large;
 }
 .productbox{
     background-color: #f9f9f9;
@@ -244,60 +269,16 @@ footer a{
 }
 
 
-/* The actual popup */
-/* .popup .popuptext {
-    visibility: hidden;
-    width: 400px;
-    background-color: #555;
-    color: #fff;
-    text-align: center;
-    border-radius: 6px;
-    padding: 8px 0;
-    position: absolute;
-    z-index: 1;
-    bottom: 125%;
-    left: 50%;
-    margin-left: -80px;
-  }
-  
-  /* Popup arrow */
-  .popup .popuptext::after {
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    margin-left: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: #555 transparent transparent transparent;
-  }
-  
-  /* Toggle this class - hide and show the popup */
-  .popup .show {
-    visibility: visible;
-    -webkit-animation: fadeIn 1s;
-    animation: fadeIn 1s;
-  }
-
-  .popup {
-    position: relative;
-    display: inline-block;
-    cursor: pointer;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-  }
-
-  @-webkit-keyframes fadeIn {
-    from {opacity: 0;} 
-    to {opacity: 1;}
-  }
-  
-  @keyframes fadeIn {
-    from {opacity: 0;}
-    to {opacity:1 ;}
-  } */
+#best-price-male, #best-price-female{
+    padding: 40px;
+    display: flex;
+    flex-direction: row;
+    .productbox{
+        width: 450px;
+    }
+    max-width: fit-content;
+    overflow-x: auto;
+}
 
 .productinfo {
     padding: 10px;
