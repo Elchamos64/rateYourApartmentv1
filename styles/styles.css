@@ -269,8 +269,8 @@ footer a{
 }
 
 
-#best-price-male, #best-price-female{
-    padding: 40px;
+#best-apartments{
+    padding: 50px;
     display: flex;
     flex-direction: row;
     .productbox{
