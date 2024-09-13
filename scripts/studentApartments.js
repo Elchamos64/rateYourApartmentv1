@@ -11,7 +11,6 @@ async function initialize() {
         const maleApartments = await fetchJSON("data/maleApartments.json");
         const femaleApartments = await fetchJSON("data/femaleApartments.json");
 
-        console.log(maleApartments);
 
         function output(data){
             const outputListElement = document.querySelector("#productbox_container");
@@ -54,16 +53,16 @@ async function initialize() {
                 return 0;
             }
         }
-        function sortPriceAsc(){
-            Reset();
-            maleApartments.sort(obj_sort_asc);
-            output(maleApartments);
-        }
-        function sortPriceDsc(){
-            Reset();
-            maleApartments.sort(obj_sort_dsc);
-            output(maleApartments);
-        }
+        // function sortPriceAsc(){
+        //     Reset();
+        //     maleApartments.sort(obj_sort_asc);
+        //     output(maleApartments);
+        // }
+        // function sortPriceDsc(){
+        //     Reset();
+        //     maleApartments.sort(obj_sort_dsc);
+        //     output(maleApartments);
+        // }
 
         // function filterByGym(){
         //     Reset();
@@ -121,7 +120,11 @@ async function initialize() {
         function search(){
             Reset();
             var searchInput = document.querySelector("#search").value;
-            var searchResults = maleApartments.filter(apartment => apartment.name.toLowerCase().includes(searchInput.toLowerCase()));
+            if(document.querySelector('#gender').value === "1"){
+                var searchResults = maleApartments.filter(apartment => apartment.name.toLowerCase().includes(searchInput.toLowerCase()));
+            }else{
+                var searchResults = femaleApartments.filter(apartment => apartment.name.toLowerCase().includes(searchInput.toLowerCase()));
+            }
             output(searchResults);
         }
 
@@ -250,8 +253,8 @@ async function initialize() {
 
 
         document.querySelector("#filter").addEventListener("click", filters);
-        document.querySelector("#ascending").addEventListener("click", sortPriceAsc);
-        document.querySelector("#descending").addEventListener("click", sortPriceDsc);
+        // document.querySelector("#ascending").addEventListener("click", sortPriceAsc);
+        // document.querySelector("#descending").addEventListener("click", sortPriceDsc);
         document.querySelector("#searchButton").addEventListener("click", search);
         document.querySelector("#clearFilter").addEventListener("click", clearFilter);
         document.querySelector("#search").addEventListener("keyup", search);
