@@ -269,7 +269,7 @@ footer a{
 }
 
 
-#best-apartments{
+.categoriezed-apts{
     padding: 50px;
     display: flex;
     flex-direction: row;

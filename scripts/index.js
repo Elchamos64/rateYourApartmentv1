@@ -174,6 +174,13 @@ async function initialize(){
             output(bestApartments, location);
         }
 
+        function ClosestTo(data,building,location){
+            let filteredData = data.filter(item =>
+                item.closestTo === building
+            );
+            output(filteredData,location)
+        }
+
         document.querySelector("#femaleBestPrice").addEventListener("click", function(){
             var newWindow = window.open("bestApt.html");
             newWindow.onload = function(){
@@ -210,13 +217,168 @@ async function initialize(){
         document.querySelector("#maleBestRating").addEventListener("click", function(){
             var newWindow = window.open("bestApt.html");
             newWindow.onload = function(){
-                let title = newWindow.document.querySelector("#apartments-title");
+                let maleTitle = newWindow.document.querySelector("#apartments-title");
                 let maleHousing = newWindow.document.querySelector("#best-apartments");
-                title.innerHTML = "Best Rated Male Apartments";
+                maleTitle.innerHTML = "Best Rated Male Apartments";
                 bestRating(maleApartments, maleHousing);
             }
             window.close();
         });
+
+        document.querySelector("#Hart").addEventListener("click", function(){
+            var newWindow = window.open("bestApt.html");
+            newWindow.onload = function(){
+                let maleTitle = newWindow.document.querySelector("#apartments-title");
+                let femaleTitle= newWindow.document.querySelector("#apartments-female-title");
+                let maleHousing = newWindow.document.querySelector("#best-apartments");
+                let femaleHousing = newWindow.document.querySelector("#best-female-apartments");
+                let viewMoreButton = newWindow.document.querySelector("#viewMoreFemaleApt");
+                maleTitle.innerHTML = "Male Apartments Closest to the Hart";
+                femaleTitle.innerHTML = "Female Apartments Closest to the Hart";
+                ClosestTo(maleApartments,"Hart Building",maleHousing);
+                ClosestTo(femaleApartments,"Hart Building",femaleHousing);
+                viewMoreButton.innerHTML = `<button class="viewMoreButton" id="viewMoreApt">View More</button>`;
+            }
+            window.close();
+        });
+
+        document.querySelector("#STC").addEventListener("click", function(){
+            var newWindow = window.open("bestApt.html");
+            newWindow.onload = function(){
+                let maleTitle = newWindow.document.querySelector("#apartments-title");
+                let femaleTitle= newWindow.document.querySelector("#apartments-female-title");
+                let femaleHousing = newWindow.document.querySelector("#best-female-apartments");
+                let viewMoreButton = newWindow.document.querySelector("#viewMoreFemaleApt");
+                femaleTitle.innerHTML = "Female Apartments Closest to the Hart";
+                ClosestTo(femaleApartments,"Hart Building",femaleHousing);
+                viewMoreButton.innerHTML = `<button class="viewMoreButton" id="viewMoreApt">View More</button>`;
+                let maleHousing = newWindow.document.querySelector("#best-apartments");
+                maleTitle.innerHTML = "Male Apartments Closest to the Science and Technology Center (STC)";
+                ClosestTo(maleApartments,"Science and Technology Center",maleHousing);
+            }
+            window.close();
+        });
+
+        document.querySelector("#Clarke").addEventListener("click", function(){
+            var newWindow = window.open("bestApt.html");
+            newWindow.onload = function(){
+                let maleTitle = newWindow.document.querySelector("#apartments-title");
+                let maleHousing = newWindow.document.querySelector("#best-apartments");
+                maleTitle.innerHTML = "Male Apartments Closest to the Clarke";
+                ClosestTo(maleApartments,"Clarke Building",maleHousing);
+                let femaleTitle= newWindow.document.querySelector("#apartments-female-title");
+                let femaleHousing = newWindow.document.querySelector("#best-female-apartments");
+                let viewMoreButton = newWindow.document.querySelector("#viewMoreFemaleApt");
+                femaleTitle.innerHTML = "Female Apartments Closest to the Hart";
+                ClosestTo(femaleApartments,"Hart Building",femaleHousing);
+                viewMoreButton.innerHTML = `<button class="viewMoreButton" id="viewMoreApt">View More</button>`;
+            }
+            window.close();
+        });
+
+        document.querySelector("#I-Center").addEventListener("click", function(){
+            var newWindow = window.open("bestApt.html");
+            newWindow.onload = function(){
+                let maleTitle = newWindow.document.querySelector("#apartments-title");
+                let maleHousing = newWindow.document.querySelector("#best-apartments");
+                maleTitle.innerHTML = "Male Apartments Closest to the I-Center";
+                ClosestTo(maleApartments,"I-Center",maleHousing);
+                let femaleTitle= newWindow.document.querySelector("#apartments-female-title");
+                let femaleHousing = newWindow.document.querySelector("#best-female-apartments");
+                let viewMoreButton = newWindow.document.querySelector("#viewMoreFemaleApt");
+                femaleTitle.innerHTML = "Female Apartments Closest to the Hart";
+                ClosestTo(femaleApartments,"Hart Building",femaleHousing);
+                viewMoreButton.innerHTML = `<button class="viewMoreButton" id="viewMoreApt">View More</button>`;
+            }
+            window.close();
+        });
+
+        document.querySelector("#Austin").addEventListener("click", function(){
+            var newWindow = window.open("bestApt.html");
+            newWindow.onload = function(){
+                let maleTitle = newWindow.document.querySelector("#apartments-title");
+                let maleHousing = newWindow.document.querySelector("#best-apartments");
+                maleTitle.innerHTML = "Male Apartments Closest to the Austin";
+                ClosestTo(maleApartments,"Austin Building",maleHousing);
+                let femaleTitle= newWindow.document.querySelector("#apartments-female-title");
+                let femaleHousing = newWindow.document.querySelector("#best-female-apartments");
+                let viewMoreButton = newWindow.document.querySelector("#viewMoreFemaleApt");
+                femaleTitle.innerHTML = "Female Apartments Closest to the Hart";
+                ClosestTo(femaleApartments,"Hart Building",femaleHousing);
+                viewMoreButton.innerHTML = `<button class="viewMoreButton" id="viewMoreApt">View More</button>`;
+            }
+            window.close();
+        });
+
+        document.querySelector("#Hinckley").addEventListener("click", function(){
+            var newWindow = window.open("bestApt.html");
+            newWindow.onload = function(){
+                let maleTitle = newWindow.document.querySelector("#apartments-title");
+                let maleHousing = newWindow.document.querySelector("#best-apartments");
+                maleTitle.innerHTML = "Male Apartments Closest to the Hinckley";
+                ClosestTo(maleApartments,"Hinckley Building",maleHousing);
+                let femaleTitle= newWindow.document.querySelector("#apartments-female-title");
+                let femaleHousing = newWindow.document.querySelector("#best-female-apartments");
+                let viewMoreButton = newWindow.document.querySelector("#viewMoreFemaleApt");
+                femaleTitle.innerHTML = "Female Apartments Closest to the Hart";
+                ClosestTo(femaleApartments,"Hart Building",femaleHousing);
+                viewMoreButton.innerHTML = `<button class="viewMoreButton" id="viewMoreApt">View More</button>`;
+            }
+            window.close();
+        });
+
+        document.querySelector("#Snow").addEventListener("click", function(){
+            var newWindow = window.open("bestApt.html");
+            newWindow.onload = function(){
+                let maleTitle = newWindow.document.querySelector("#apartments-title");
+                let maleHousing = newWindow.document.querySelector("#best-apartments");
+                maleTitle.innerHTML = "Male Apartments Closest to the Snow";
+                ClosestTo(maleApartments,"Snow Building",maleHousing);
+                let femaleTitle= newWindow.document.querySelector("#apartments-female-title");
+                let femaleHousing = newWindow.document.querySelector("#best-female-apartments");
+                let viewMoreButton = newWindow.document.querySelector("#viewMoreFemaleApt");
+                femaleTitle.innerHTML = "Female Apartments Closest to the Hart";
+                ClosestTo(femaleApartments,"Hart Building",femaleHousing);
+                viewMoreButton.innerHTML = `<button class="viewMoreButton" id="viewMoreApt">View More</button>`;
+            }
+            window.close();
+        });
+
+        document.querySelector("#Health").addEventListener("click", function(){
+            var newWindow = window.open("bestApt.html");
+            newWindow.onload = function(){
+                let maleTitle = newWindow.document.querySelector("#apartments-title");
+                let maleHousing = newWindow.document.querySelector("#best-apartments");
+                maleTitle.innerHTML = "Male Apartments Closest to the Health Center";
+                ClosestTo(maleApartments,"Health Center", maleHousing);
+                let femaleTitle= newWindow.document.querySelector("#apartments-female-title");
+                let femaleHousing = newWindow.document.querySelector("#best-female-apartments");
+                let viewMoreButton = newWindow.document.querySelector("#viewMoreFemaleApt");
+                femaleTitle.innerHTML = "Female Apartments Closest to the Hart";
+                ClosestTo(femaleApartments,"Hart Building",femaleHousing);
+                viewMoreButton.innerHTML = `<button class="viewMoreButton" id="viewMoreApt">View More</button>`;
+            }
+            window.close();
+        });
+
+        document.querySelector("#Spori").addEventListener("click", function(){
+            var newWindow = window.open("bestApt.html");
+            newWindow.onload = function(){
+                let maleTitle = newWindow.document.querySelector("#apartments-title");
+                let maleHousing = newWindow.document.querySelector("#best-apartments");
+                maleTitle.innerHTML = "Male Apartments Closest to the Spori";
+                ClosestTo(maleApartments,"Spori Building",maleHousing);
+                let femaleTitle= newWindow.document.querySelector("#apartments-female-title");
+                let femaleHousing = newWindow.document.querySelector("#best-female-apartments");
+                let viewMoreButton = newWindow.document.querySelector("#viewMoreFemaleApt");
+                femaleTitle.innerHTML = "Female Apartments Closest to the Hart";
+                ClosestTo(femaleApartments,"Hart Building",femaleHousing);
+                viewMoreButton.innerHTML = `<button class="viewMoreButton" id="viewMoreApt">View More</button>`;
+            }
+            window.close();
+        });
+
+
     }catch(error){
         console.error(error);
     }
