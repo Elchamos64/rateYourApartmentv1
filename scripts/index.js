@@ -249,8 +249,8 @@ async function initialize(){
                 let femaleTitle= newWindow.document.querySelector("#apartments-female-title");
                 let femaleHousing = newWindow.document.querySelector("#best-female-apartments");
                 let viewMoreButton = newWindow.document.querySelector("#viewMoreFemaleApt");
-                femaleTitle.innerHTML = "Female Apartments Closest to the Hart";
-                ClosestTo(femaleApartments,"Hart Building",femaleHousing);
+                femaleTitle.innerHTML = "Female Apartments Closest to the Science and Technology Center (STC)";
+                ClosestTo(femaleApartments,"Science and Technology Center",femaleHousing);
                 viewMoreButton.innerHTML = `<button class="viewMoreButton" id="viewMoreApt">View More</button>`;
                 let maleHousing = newWindow.document.querySelector("#best-apartments");
                 maleTitle.innerHTML = "Male Apartments Closest to the Science and Technology Center (STC)";
@@ -269,8 +269,8 @@ async function initialize(){
                 let femaleTitle= newWindow.document.querySelector("#apartments-female-title");
                 let femaleHousing = newWindow.document.querySelector("#best-female-apartments");
                 let viewMoreButton = newWindow.document.querySelector("#viewMoreFemaleApt");
-                femaleTitle.innerHTML = "Female Apartments Closest to the Hart";
-                ClosestTo(femaleApartments,"Hart Building",femaleHousing);
+                femaleTitle.innerHTML = "Female Apartments Closest to the Clarke";
+                ClosestTo(femaleApartments,"Clarke Building",femaleHousing);
                 viewMoreButton.innerHTML = `<button class="viewMoreButton" id="viewMoreApt">View More</button>`;
             }
             window.close();
@@ -286,8 +286,8 @@ async function initialize(){
                 let femaleTitle= newWindow.document.querySelector("#apartments-female-title");
                 let femaleHousing = newWindow.document.querySelector("#best-female-apartments");
                 let viewMoreButton = newWindow.document.querySelector("#viewMoreFemaleApt");
-                femaleTitle.innerHTML = "Female Apartments Closest to the Hart";
-                ClosestTo(femaleApartments,"Hart Building",femaleHousing);
+                femaleTitle.innerHTML = "Female Apartments Closest to the I-Center";
+                ClosestTo(femaleApartments,"I-Center",femaleHousing);
                 viewMoreButton.innerHTML = `<button class="viewMoreButton" id="viewMoreApt">View More</button>`;
             }
             window.close();
@@ -303,8 +303,8 @@ async function initialize(){
                 let femaleTitle= newWindow.document.querySelector("#apartments-female-title");
                 let femaleHousing = newWindow.document.querySelector("#best-female-apartments");
                 let viewMoreButton = newWindow.document.querySelector("#viewMoreFemaleApt");
-                femaleTitle.innerHTML = "Female Apartments Closest to the Hart";
-                ClosestTo(femaleApartments,"Hart Building",femaleHousing);
+                femaleTitle.innerHTML = "Female Apartments Closest to the Austin";
+                ClosestTo(femaleApartments,"Austin Building",femaleHousing);
                 viewMoreButton.innerHTML = `<button class="viewMoreButton" id="viewMoreApt">View More</button>`;
             }
             window.close();
@@ -320,8 +320,8 @@ async function initialize(){
                 let femaleTitle= newWindow.document.querySelector("#apartments-female-title");
                 let femaleHousing = newWindow.document.querySelector("#best-female-apartments");
                 let viewMoreButton = newWindow.document.querySelector("#viewMoreFemaleApt");
-                femaleTitle.innerHTML = "Female Apartments Closest to the Hart";
-                ClosestTo(femaleApartments,"Hart Building",femaleHousing);
+                femaleTitle.innerHTML = "Female Apartments Closest to the Hinckley";
+                ClosestTo(femaleApartments,"Hinckley Building",femaleHousing);
                 viewMoreButton.innerHTML = `<button class="viewMoreButton" id="viewMoreApt">View More</button>`;
             }
             window.close();
@@ -337,8 +337,8 @@ async function initialize(){
                 let femaleTitle= newWindow.document.querySelector("#apartments-female-title");
                 let femaleHousing = newWindow.document.querySelector("#best-female-apartments");
                 let viewMoreButton = newWindow.document.querySelector("#viewMoreFemaleApt");
-                femaleTitle.innerHTML = "Female Apartments Closest to the Hart";
-                ClosestTo(femaleApartments,"Hart Building",femaleHousing);
+                femaleTitle.innerHTML = "Female Apartments Closest to the Snow";
+                ClosestTo(femaleApartments,"Snow Building",femaleHousing);
                 viewMoreButton.innerHTML = `<button class="viewMoreButton" id="viewMoreApt">View More</button>`;
             }
             window.close();
@@ -354,8 +354,8 @@ async function initialize(){
                 let femaleTitle= newWindow.document.querySelector("#apartments-female-title");
                 let femaleHousing = newWindow.document.querySelector("#best-female-apartments");
                 let viewMoreButton = newWindow.document.querySelector("#viewMoreFemaleApt");
-                femaleTitle.innerHTML = "Female Apartments Closest to the Hart";
-                ClosestTo(femaleApartments,"Hart Building",femaleHousing);
+                femaleTitle.innerHTML = "Female Apartments Closest to the Health Center";
+                ClosestTo(femaleApartments,"Health Center",femaleHousing);
                 viewMoreButton.innerHTML = `<button class="viewMoreButton" id="viewMoreApt">View More</button>`;
             }
             window.close();
@@ -371,8 +371,8 @@ async function initialize(){
                 let femaleTitle= newWindow.document.querySelector("#apartments-female-title");
                 let femaleHousing = newWindow.document.querySelector("#best-female-apartments");
                 let viewMoreButton = newWindow.document.querySelector("#viewMoreFemaleApt");
-                femaleTitle.innerHTML = "Female Apartments Closest to the Hart";
-                ClosestTo(femaleApartments,"Hart Building",femaleHousing);
+                femaleTitle.innerHTML = "Female Apartments Closest to the Spori";
+                ClosestTo(femaleApartments,"Spori Building",femaleHousing);
                 viewMoreButton.innerHTML = `<button class="viewMoreButton" id="viewMoreApt">View More</button>`;
             }
             window.close();
